@@ -42,4 +42,39 @@
 		{
 			return $this->prenom_cli;
 		}
+
+		public function get_reg_cli ()
+		{
+			return $this->reg_cli;
+		}
+
+		public function get_clas_cli ()
+		{
+			return $this->clas_cli;
+		}
+
+		public function get_lundi ()
+		{
+			return $this->lun;
+		}
+
+		public function get_mardi ()
+		{
+			return $this->mar;
+		}
+
+		public function get_mercredi ()
+		{
+			return $this->mer;
+		}
+
+		public function get_jeudi ()
+		{
+			return $this->jeu;
+		}
+
+		public function get_vendredi ()
+		{
+			return $this->ven;
+		}
 	}
