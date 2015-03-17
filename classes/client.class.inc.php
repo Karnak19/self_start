@@ -28,27 +28,27 @@
 			$this->solde_cli=$solde;
 		}
 
-		public function get_id_cli ()
+		public function get_id ()
 		{
 			return $this->id_cli;
 		}
 
-		public function get_nom_cli ()
+		public function get_nom ()
 		{
 			return $this->nom_cli;
 		}
 
-		public function get_prenom_cli ()
+		public function get_prenom ()
 		{
 			return $this->prenom_cli;
 		}
 
-		public function get_reg_cli ()
+		public function get_reg ()
 		{
 			return $this->reg_cli;
 		}
 
-		public function get_clas_cli ()
+		public function get_clas ()
 		{
 			return $this->clas_cli;
 		}
@@ -76,5 +76,10 @@
 		public function get_vendredi ()
 		{
 			return $this->ven;
+		}
+
+		public function get_solde ()
+		{
+			return $this->solde_cli;
 		}
 	}

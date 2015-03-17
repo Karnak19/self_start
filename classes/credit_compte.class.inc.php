@@ -14,37 +14,37 @@
 			$this->type_cred=$type;
 		}
 
-		public function get_id_cred ()
+		public function get_id ()
 		{
 			return $this->id_cred;
 		}
 
-		public function get_date_cred ()
+		public function get_date ()
 		{
 			return $this->date_cred;
 		}
 
-		public function get_montant_cred ()
+		public function get_montant ()
 		{
 			return $this->montant_cred;
 		}
 
-		public function get_type_cred ()
+		public function get_type ()
 		{
 			return $this->type_cred;
 		}
 
-		public function set_date_cred ($date)
+		public function set_date ($date)
 		{
 			$this->date_cred=$date;
 		}
 
-		public function set_montant_cred ($montant)
+		public function set_montant ($montant)
 		{
 			$this->montant_cred=$montant;
 		}
 
-		public function set_type_cred ($type)
+		public function set_type ($type)
 		{
 			$this->type_cred=$type;
 		}
