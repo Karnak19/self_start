@@ -1,22 +1,40 @@
 <?php
-	class connexion
+	class repas
 	{
-		private $id_connect=0;
-		private $nom_connect="";
-		private $prenom_connect="";
-		private $type_connect="";
-		private $log_connect="";
-		private $mdp_connect="";
+		private $id_repas=0;
+		private $lib_repas="";
+		private $tarif_repas=0;
 
-		public function connexion ($id, $nom, $prenom, $type, $log, $mdp)
+		public function repas ($id, $libelle, $tarif)
 		{
-			$this->id_connect=$id;
-			$this->nom_connect=$nom;
-			$this->prenom_connect=$prenom;
-			$this->type_connect=$type;
-			$this->log_connect=$log;
-			$this->mdp_connect=$mdp;
+			$this->id_repas=$id;
+			$this->lib_repas=$libelle;
+			$this->tarif_repas=$tarif;
 		}
 
-		
+		public function get_id ()
+		{
+			return $this->id_repas;
+		}
+
+		public function get_libelle ()
+		{
+			return $this->lib_repas;
+		}
+
+		public function get_tarif ()
+		{
+			return $this->tarif_repas;
+		}
+
+		public function set_libelle ($libelle)
+		{
+			$this->lib_repas=$libelle;
+		}
+
+		public function set_tarif ($tarif)
+		{
+			$this->tarif_repas=$tarif;
+		}
 	}
+?>
