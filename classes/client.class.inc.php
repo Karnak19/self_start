@@ -32,4 +32,14 @@
 		{
 			return $this->id_cli;
 		}
+
+		public function get_nom_cli ()
+		{
+			return $this->nom_cli;
+		}
+
+		public function get_prenom_cli ()
+		{
+			return $this->prenom_cli;
+		}
 	}
