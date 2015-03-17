@@ -82,4 +82,35 @@
 		{
 			return $this->solde_cli;
 		}
+
+		public function set_lundi ()
+		{
+			$this->lun=true;
+		}
+
+		public function set_mardi ()
+		{
+			$this->mar=true;
+		}
+
+		public function set_mercredi ()
+		{
+			$this->mer=true;
+		}
+
+		public function set_jeudi ()
+		{
+			$this->jeu=true;
+		}
+
+		public function set_vendredi ()
+		{
+			$this->vend=true;
+		}
+
+		public function set_solde ($solde)
+		{
+			$this->solde_cli=$solde;
+		}
 	}
+?>
