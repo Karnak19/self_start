@@ -12,4 +12,9 @@
 		private $jeu=false;
 		private $ven=false;
 		private $solde_cli=0;
+
+		public function client ($id, $nom, $prenom, $regime, $classe, $lundi, $mardi, $mercredi, $jeudi, $vendredi, $solde)
+		{
+			$this->id_cli=$id_cli;
+		}
 	}
