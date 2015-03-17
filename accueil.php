@@ -9,5 +9,6 @@
 				echo $_SESSION['type'];
 			?>
 		</h1>
+		test
 	</body>
 </html>
