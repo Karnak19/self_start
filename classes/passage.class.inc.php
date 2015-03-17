@@ -20,4 +20,24 @@
 		{
 			return $this->id_passage;
 		}
+
+		public function get_date ()
+		{
+			return $this->date_passage;
+		}
+
+		public function get_service ()
+		{
+			return $this->serv_passage;
+		}
+
+		public function get_libelle ()
+		{
+			return $this->lib_repas;
+		}
+
+		public function get_montant ()
+		{
+			return $this->mont_repas;
+		}
 	}
