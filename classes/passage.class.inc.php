@@ -40,4 +40,15 @@
 		{
 			return $this->mont_repas;
 		}
+
+		public function set_date ($date)
+		{
+			$this->date_passage=$date;
+		}
+
+		public function set_service ($service)
+		{
+			$this->service=$service;
+		}
 	}
+?>
