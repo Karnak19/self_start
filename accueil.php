@@ -9,6 +9,10 @@
 				echo $_SESSION['type'];
 			?>
 		</h1>
-		test Basile encore
+		<a href="repas/repas.php">Repas</a>
+		<a href="passage/passage.php">Passage</a>
+		<a href="compte/credit_compte.php">Crédit compte</a>
+		<a href="fidelisation/fidelisation.php">Fidélisation</a>
+		<a href="stats/stats.php">Statistiques</a>
 	</body>
 </html>
