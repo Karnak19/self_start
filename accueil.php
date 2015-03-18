@@ -9,6 +9,6 @@
 				echo $_SESSION['type'];
 			?>
 		</h1>
-		test
+		test Basile
 	</body>
 </html>
