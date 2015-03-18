@@ -175,10 +175,7 @@ body {
 }
 
 .content {
-    width: 75%;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-top: 100px;
+    width: 100%;
     font-family: avantgarde;
     font-weight: normal;
     font-size: 18px;
@@ -218,6 +215,13 @@ body {
 .menu img {
     height: 180px;
     margin: 25px;
+    opacity: 0.5;
+}
+.menu img:hover {
+    opacity: 1;
+    -webkit-transition: opacity 0.1s ease-in-out;/* transition pour Chrome et Safari */
+    -moz-transition: opacity 0.1s ease-in-out;/* transition pour Firefox */
+    -o-transition: opacity 0.1s ease-in-out;/* transition pour Opéra */
 }
 
 fieldset {
