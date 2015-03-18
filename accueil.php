@@ -10,5 +10,9 @@
 			?>
 		</h1>
 		test
+
+		
+			<i class="fa fa-money fa-5x"></i>
+
 	</body>
 </html>
