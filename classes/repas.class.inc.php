@@ -36,5 +36,40 @@
 		{
 			$this->tarif_repas=$tarif;
 		}
+		
+		/////Affichage
+		public function nom_repas ($id)
+		{
+			$SQL="SELECT lib_repas FROM lb_repas WHERE id_repas='$id'";
+			$req=mysql_query ($SQL) or die (mysql_error ());
+			$res=mysql_fetch_array ($req);
+			$nom=$res ["lib_repas"];
+
+			return $nom;
+		}
+		
+		public function tarif_repas ($id)
+		{
+			$SQL="SELECT tarif_repas FROM lb_repas WHERE id_repas='$id'";
+			$req=mysql_query ($SQL) or die (mysql_error ());
+			$res=mysql_fetch_array ($req);
+			$tarif=$res ["tarif_repas"];
+
+			return $tarif;
+		}
+		
+		//Ajout
+		public function ajout_repas ($lib,$tarif)
+		{
+			$SQL="INSERT INTO lb_repas (id_repas,lib_repas,tarif_repas) VALUES('','$lib','$tarif'");
+			mysql_query ($SQL) or die (mysql_error ());
+		}
+		
+		//Supression
+		public function sup_repas ($id)
+		{
+			$SQL="UPDATE lb_repas SET valide_repas='n' WHERE id_repas='$id'");
+			mysql_query ($SQL) or die (mysql_error ());
+		}
 	}
 ?>
