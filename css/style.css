@@ -76,17 +76,17 @@ body {
     top: 0px;
     width: 100%;
     height: 80px;
-    box-shadow: 0px 2px 15px #888888;
+    /*box-shadow: 0px 2px 15px #888888;*/
     font-family: avantgarde;
     font-size: 30px;
     z-index: 10;
-    background-color: rgba(255, 255, 255, 1.00)
+    /*background-color: rgba(255, 255, 255, 1.00);*/
 }
 
 .header img {
     height: 60px;
     margin-left: 10px;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
     #welcome {
@@ -118,9 +118,9 @@ body {
     
     .cornerlog {
         position: fixed;
-        right: 30px;
-        top: 30px;
-        height: 100px;
+        right: 10px;
+        top: 10px;
+        height: 50px;
         font-size: 18px;
     }
     
@@ -221,7 +221,7 @@ body {
     opacity: 1;
     -webkit-transition: opacity 0.1s ease-in-out;/* transition pour Chrome et Safari */
     -moz-transition: opacity 0.1s ease-in-out;/* transition pour Firefox */
-    -o-transition: opacity 0.1s ease-in-out;/* transition pour Opéra */
+    -o-transition: opacity 0.1s ease-in-out;/* transition pour OpÃ©ra */
 }
 
 fieldset {
