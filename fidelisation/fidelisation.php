@@ -17,9 +17,22 @@
                         <label for="recipient-name" class="control-label">Recipient:</label>
                         <input type="text" class="form-control" id="recipient-name">
                      </div>
-                     <div class="form-group">
-                        <label for="message-text" class="control-label">Message:</label>
-                        <textarea class="form-control" id="message-text"></textarea>
+                     <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-primary">
+                           <input type="checkbox" autocomplete="off"> Lundi
+                        </label>
+                        <label class="btn btn-primary">
+                           <input type="checkbox" autocomplete="off"> Mardi
+                        </label>
+                        <label class="btn btn-primary">
+                           <input type="checkbox" autocomplete="off"> Mercredi
+                        </label>
+                        <label class="btn btn-primary">
+                           <input type="checkbox" autocomplete="off"> Jeudi
+                        </label>
+                        <label class="btn btn-primary">
+                           <input type="checkbox" autocomplete="off"> Vendredi
+                        </label>
                      </div>
                   </form>
                </div>
