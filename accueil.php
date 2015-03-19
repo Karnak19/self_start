@@ -33,6 +33,17 @@
 			//Include des Modals Bootstrap
 			include 'fidelisation/fidelisation.php'; //Fidélisation
 		?>
+		
+		<!-- --------------------------------- SCRIPTS ------------------------------------- -->
+		<!-- --------------------------------- SCRIPTS ------------------------------------- -->
+		<!-- --------------------------------- SCRIPTS ------------------------------------- -->
+        
+		<!-- Multiselect -->
+		<script>
+		    $("select").multiselect({
+		    selectedText: "# of # selected"
+		    }).multiselectfilter({"label":"Filtre:", "placeholder":"Saisissez un filtre..."});
+		</script>
 	</body>
 </html>
 <?php

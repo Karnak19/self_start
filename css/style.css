@@ -35,12 +35,29 @@ a {
     cursor: pointer;
 }
 
+.clear {
+    clear: both;
+}
+
+/*  ----------------------
+ *  --------Bootstrap-----
+ *  ---------------------*/
+
 .btn-default.active {
     background-color: #5CB85C;
     border-color: #4CAE4C;
 }
 
-/* Login */
+.form-group img {
+    float: right;
+    height: 150px;
+}
+
+
+/*  ----------------------
+ *  --------Login--------
+ *  ---------------------*/
+
 #log {
     width: 420px;
     height: 400px;

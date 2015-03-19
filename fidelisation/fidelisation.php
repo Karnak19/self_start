@@ -14,7 +14,7 @@
                <div class="modal-body">
                   <form>
                      <div class="form-group">
-                        <select id="client" name="client">
+                        <select id="client" name="client[]" multiple="multiple">
                         <?php
                            $sql= "SELECT * FROM lb_clients";
                            $req= mysql_query($sql);
@@ -27,6 +27,10 @@
                            }
                         ?>
                         </select>
+                        <?php
+                        echo "<img src='img/client/".$id.".jpg'>";
+                        ?>
+                        <div class="clear"></div>
                      </div>
                      <div class="btn-group" data-toggle="buttons">
                         <label class="btn btn-default">
@@ -54,7 +58,7 @@
 					$client=new client();
 					switch ($fidelise)
 					{
-					case "Lundi": client->set_lundi ($id);
+					case "Lundi": $client->set_lundi ($id);
 					break;
 					case "Mardi": $client->set_mardi ($id);
 					break;
