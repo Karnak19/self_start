@@ -16,14 +16,14 @@
                      <div class="form-group">
                         <select id="client" name="client">
                         <?php
-                           $sql= "SELECT * FROM lb_client";
+                           $sql= "SELECT * FROM lb_clients";
                            $req= mysql_query($sql);
                            while ($res= mysql_fetch_array($req))
                            {
                                $id=$res['id_cli'];
                                $nom=$res['nom_cli'];
                                $prenom=$res['prenom_cli'];
-                               echo "<option value='".$id."'> ".$nom."</option>";
+                               echo "<option value='".$id."'>".$nom." ".$prenom."</option>";
                            }
                         ?>
                         </select>

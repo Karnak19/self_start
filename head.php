@@ -12,12 +12,14 @@
 		
 	<!-- Include FontAwesome -->
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+         
+         <link rel="stylesheet" href="css/style.css">
 
 		
          <?php
          echo $title;
          
-         require_once('classes/client.inc.php');
+         require_once('classes/client.class.inc.php');
 	?>
 	<!--<link rel="icon" type="image/x-icon" href="img/AAB.ico">-->
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />

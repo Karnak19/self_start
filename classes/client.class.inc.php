@@ -1,5 +1,5 @@
 <?php
-	include ("inc/configure.inc.php");
+	//include ("../inc/configure.inc.php");
 	class client
 	{
 		private $id_cli=0;
@@ -125,9 +125,9 @@
 			$this->solde_cli=$solde;
 		}
 		
-		public function client ($id)
+		public function afficherclient ()
 		{
-			$SQL="SELECT id_cli, nom_cli, prenom_cli FROM lb_clients WHERE id_cli='$id'";
+			$SQL="SELECT * FROM lb_clients";
 			$req=mysql_query ($SQL) or die (mysql_error ());
 			$res=mysql_fetch_array ($req);
 			$id=$res['id_cli'];
