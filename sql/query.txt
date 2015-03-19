@@ -13,3 +13,6 @@ INSERT INTO `lb_self`.`lb_clients` (`id_cli`, `nom_cli`, `prenom_cli`, `reg_cli`
  
  
  ALTER TABLE `lb_repas` ADD `valide` VARCHAR(3) NOT NULL DEFAULT 'oui' AFTER `tarif_repas`;
+ 
+UPDATE `lb_self`.`lb_clients` SET `id_cli` = '411001' WHERE `lb_clients`.`id_cli` =1;
+UPDATE `lb_self`.`lb_clients` SET `id_cli` = '411002' WHERE `lb_clients`.`id_cli` =2;
