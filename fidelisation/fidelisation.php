@@ -8,7 +8,7 @@
                <div class="modal-body">
                   <form>
                      <div class="form-group">
-                        <select id="client" name="client[]" multiple="multiple">
+                        <select id="client" name="client" multiple="multiple">
                         <?php
                            $sql= "SELECT * FROM lb_clients";
                            $req= mysql_query($sql);
@@ -47,7 +47,7 @@
                </div>
                <div class="modal-footer">
                   <button type="button" class="btn btn-warning" data-dismiss="modal">Annuler</button>
-                  <button type="button" class="btn btn-success" onclick="location='fidelisation/traitement_fidelisation.php?id=<?php echo $id; ?>'">Fidéliser</button>
+                  <button type="button" class="btn btn-success" onclick="location='traitement_fidelisation.php'">Fidéliser</button>
                </div>
             </div>
          </div>
