@@ -83,40 +83,35 @@
 			return $this->solde_cli;
 		}
 
-		public function set_lundi ($id)
+		public function set_lundi ($select_value)
 		{
-			$SQL_lundichoix= "UPDATE lb_clients SET lun_midi=1 WHERE id_cli='$id' ";
-			$Req_lundichoix= mysql_query($SQL_lundichoix);
-			$Res_lundichoix=mysql_fetch_array($Req_lundichoix);
+			$SQL_lundichoix= "UPDATE lb_clients SET lun_midi='1' WHERE id_cli='$select_value'";
+			mysql_query($SQL_lundichoix) or die (mysql_error());
 	
 		}
 
-		public function set_mardi ($id)
+		public function set_mardi ($select_value)
 		{
-			$SQL_mardichoix= "UPDATE lb_clients SET mar_midi=1 WHERE id_cli='$id' ";
-			$Req_mardichoix= mysql_query($SQL_mardichoix);
-			$Res_mardichoix=mysql_fetch_array($Req_mardichoix);
+			$SQL_mardichoix= "UPDATE lb_clients SET mar_midi=1 WHERE id_cli='$select_value' ";
+			mysql_query($SQL_mardichoix);
 		}
 
-		public function set_mercredi ($id)
+		public function set_mercredi ($select_value)
 		{
-			$SQL_mercredichoix= "UPDATE lb_clients SET merc_midi=1 WHERE id_cli='$id' ";
-			$Req_mercredichoix= mysql_query($SQL_mercredichoix);
-			$Res_mercredichoix=mysql_fetch_array($Req_mercredichoix);
+			$SQL_mercredichoix= "UPDATE lb_clients SET merc_midi=1 WHERE id_cli='$select_value' ";
+			mysql_query($SQL_mercredichoix);
 		}
 
-		public function set_jeudi ($id)
+		public function set_jeudi ($select_value)
 		{
-			$SQL_jeudichoix= "UPDATE lb_clients SET jeu_midi=1 WHERE id_cli='$id' ";
-			$Req_jeudichoix= mysql_query($SQL_jeudichoix);
-			$Res_jeudichoix=mysql_fetch_array($Req_jeudichoix);
+			$SQL_jeudichoix= "UPDATE lb_clients SET jeu_midi=1 WHERE id_cli='$select_value' ";
+			mysql_query($SQL_jeudichoix);
 		}
 
-		public function set_vendredi ($id)
+		public function set_vendredi ($select_value)
 		{
-			$SQL_vendredichoix= "UPDATE lb_clients SET ven_midi=1 WHERE id_cli='$id' ";
-			$Req_vendredichoix= mysql_query($SQL_vendredichoix);
-			$Res_vendredichoix=mysql_fetch_array($Req_vendredichoix);
+			$SQL_vendredichoix= "UPDATE lb_clients SET ven_midi=1 WHERE id_cli='$select_value' ";
+			mysql_query($SQL_vendredichoix);
 		}
 
 		public function set_solde ($solde)

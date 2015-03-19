@@ -31,7 +31,7 @@
 		</div>
 		<?php
 			//Include des Modals Bootstrap
-			include 'fidelisation/fidelisation.php'; //FidÃ©lisation
+			include 'fidelisation/fidelisation.php'; //Fidélisation
 			include 'repas/repas.php'; //Repas
 		?>
 		
