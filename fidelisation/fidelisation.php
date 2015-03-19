@@ -50,6 +50,22 @@
                <div class="modal-footer">
                   <button type="button" class="btn btn-warning" data-dismiss="modal">Annuler</button>
                   <button type="button" class="btn btn-success">Fidéliser</button>
+				  <?php
+					$client=new client();
+					switch ($fidelise)
+					{
+					case "Lundi": $client->set_lundi ($id);
+					break;
+					case "Mardi": $client->set_mardi ($id);
+					break;
+					case "Mercredi": $client->set_mercredi ($id);
+					break;
+					case "Jeudi": $client->set_jeudi ($id);
+					break;
+					case "Vendredi": $client->set_vendredi ($id);
+					break;
+					}
+					?>
                </div>
             </div>
          </div>

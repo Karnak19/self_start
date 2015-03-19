@@ -86,7 +86,7 @@
 
 		public function set_lundi ($id_cli)
 		{
-			$SQL_lundichoix= "UPDATE lb_clients SET lun_midi=1 WHERE id_cli='$id_cli' ";
+			$SQL_lundichoix= "UPDATE lb_clients SET lun_midi=1 WHERE id_cli='$id' ";
 			$Req_lundichoix= mysql_query($SQL_lundichoix);
 			$Res_lundichoix=mysql_fetch_array($Req_lundichoix);
 	
@@ -94,28 +94,28 @@
 
 		public function set_mardi ($id_cli)
 		{
-			$SQL_mardichoix= "UPDATE lb_clients SET mar_midi=1 WHERE id_cli='$id_cli' ";
+			$SQL_mardichoix= "UPDATE lb_clients SET mar_midi=1 WHERE id_cli='$id' ";
 			$Req_mardichoix= mysql_query($SQL_mardichoix);
 			$Res_mardichoix=mysql_fetch_array($Req_mardichoix);
 		}
 
 		public function set_mercredi ($id_cli)
 		{
-			$SQL_mercredichoix= "UPDATE lb_clients SET merc_midi=1 WHERE id_cli='$id_cli' ";
+			$SQL_mercredichoix= "UPDATE lb_clients SET merc_midi=1 WHERE id_cli='$id' ";
 			$Req_mercredichoix= mysql_query($SQL_mercredichoix);
 			$Res_mercredichoix=mysql_fetch_array($Req_mercredichoix);
 		}
 
 		public function set_jeudi ($id_cli)
 		{
-			$SQL_jeudichoix= "UPDATE lb_clients SET jeu_midi=1 WHERE id_cli='$id_cli' ";
+			$SQL_jeudichoix= "UPDATE lb_clients SET jeu_midi=1 WHERE id_cli='$id' ";
 			$Req_jeudichoix= mysql_query($SQL_jeudichoix);
 			$Res_jeudichoix=mysql_fetch_array($Req_jeudichoix);
 		}
 
 		public function set_vendredi ($id_cli)
 		{
-			$SQL_vendredichoix= "UPDATE lb_clients SET ven_midi=1 WHERE id_cli='$id_cli' ";
+			$SQL_vendredichoix= "UPDATE lb_clients SET ven_midi=1 WHERE id_cli='$id' ";
 			$Req_vendredichoix= mysql_query($SQL_vendredichoix);
 			$Res_vendredichoix=mysql_fetch_array($Req_vendredichoix);
 		}
