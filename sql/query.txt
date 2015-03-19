@@ -1,5 +1,12 @@
 ALTER TABLE `lb_credit` ADD `id_client` INT( 11 ) NOT NULL ;
 
+ALTER TABLE `lb_clients` CHANGE `mar_midi` `mar_midi` TINYINT(1) NOT NULL DEFAULT '0', CHANGE `merc_midi` `merc_midi` TINYINT(1) NOT NULL DEFAULT '0', CHANGE `jeu_midi` `jeu_midi` TINYINT(1) NOT NULL DEFAULT '0',
+ CHANGE `ven_midi` `ven_midi` TINYINT(1) NOT NULL DEFAULT '0';
 
 
-INSERT INTO `lb_self`.`lb_clients` (`id_cli`, `nom_cli`, `prenom_cli`, `reg_cli`, `clas_cli`, `lun_midi`, `mar_midi`, `merc_midi`, `jeu_midi`, `ven_midi`, `solde_cli`) VALUES ('1', 'CHAUD', 'FE', 'etudiant', 'sio', '0', '0', '0', '0', '0', '15'), ('2', 'SAGEAU', 'pierre', 'etudiant', 'sio', '0', '0', '0', '0', '0', '10');
+INSERT INTO `lb_self`.`lb_clients` (`id_cli`, `nom_cli`, `prenom_cli`, `reg_cli`, `clas_cli`, `lun_midi`, `mar_midi`, `merc_midi`, `jeu_midi`, `ven_midi`, `solde_cli`) VALUES ('1', 'CHAUD', 'FE', 'etudiant', 'sio', '0', '0', '0', '0', '0', '15'),
+ ('2', 'SAGEAU', 'pierre', 'etudiant', 'sio', '0', '0', '0', '0', '0', '10');
+ 
+ 
+ INSERT INTO `lb_self`.`lb_repas` (`id_repas`, `lib_repas`, `tarif_repas`) VALUES ('1', 'Repas Complet', '8'), ('2', 'Cafe', '1');
+ 

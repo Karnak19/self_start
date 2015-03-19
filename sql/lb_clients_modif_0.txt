@@ -1,1 +1,0 @@
-ALTER TABLE `lb_clients` CHANGE `mar_midi` `mar_midi` TINYINT(1) NOT NULL DEFAULT '0', CHANGE `merc_midi` `merc_midi` TINYINT(1) NOT NULL DEFAULT '0', CHANGE `jeu_midi` `jeu_midi` TINYINT(1) NOT NULL DEFAULT '0', CHANGE `ven_midi` `ven_midi` TINYINT(1) NOT NULL DEFAULT '0';
