@@ -54,7 +54,7 @@
 					$client=new client();
 					switch ($fidelise)
 					{
-					case "Lundi": $client->set_lundi ($id);
+					case "Lundi": client->set_lundi ($id);
 					break;
 					case "Mardi": $client->set_mardi ($id);
 					break;
