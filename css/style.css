@@ -253,7 +253,7 @@ fieldset {
     background-color: rgb(200, 200, 200);
     border: solid 4px;
     border-radius: 8px;
-    shadow: 1px 1px 20px #888888;
+    box-shadow: 1px 1px 20px #888888;
     text-align: center;
 }
 

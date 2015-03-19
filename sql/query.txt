@@ -1,0 +1,1 @@
+ALTER TABLE `lb_credit` ADD `id_client` INT( 11 ) NOT NULL ;
