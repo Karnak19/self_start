@@ -48,5 +48,12 @@
 		{
 			$this->type_cred=$type;
 		}
+
+		public function crediter_compte ($client, $type, $montant)
+		{
+			$date=date ("Y-m-d");
+			$SQL="INSERT INTO lb_credit (id_cred, date_cred, montant_cred, type_cred, id_client) VALUES ('', $date, $montant, $type, $client)";
+			mysql_query ($SQL) or die (mysql_error ());
+		}
 	}
 ?>
