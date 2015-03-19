@@ -50,5 +50,22 @@
 		{
 			$this->service=$service;
 		}
+
+		public function jour ()
+		{
+			$jour=date ("Y-m-d");
+			return $jour;
+		}
+
+		public function client ($id)
+		{
+			$SQL="SELECT nom_cli, prenom_cli FROM lb_clients WHERE id_cli='$id'";
+			$req=mysql_query ($SQL) or die (mysql_error ());
+			$res=mysql_fetch_array ($req);
+			$nom=$res ["nom_cli"];
+			$prenom=$res ["prenom_cli"];
+			$client=$nom." ".$prenom;
+			return $client;
+		}
 	}
 ?>

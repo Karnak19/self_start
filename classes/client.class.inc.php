@@ -1,6 +1,5 @@
 <?php
-	include 'inc/configure.inc.php'
-	
+	include ("inc/configure.inc.php");
 	class client
 	{
 		private $id_cli=0;
