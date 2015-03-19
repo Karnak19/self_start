@@ -219,7 +219,7 @@ a {
 }
 
 .content form {
-    width: 420px;
+    width: auto;
     margin-bottom: 30px;
 }
 
