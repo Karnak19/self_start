@@ -1,9 +1,3 @@
-<html>
-<!--   <?php
-      include ('../inc/configure.inc.php');
-      include ('../head.php');
-   ?> -->
-   <body>
       <div class="modal fade" id="fidel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
          <div class="modal-dialog">
             <div class="modal-content">
@@ -74,5 +68,3 @@
             </div>
          </div>
       </div>
-   </body>
-</html>
