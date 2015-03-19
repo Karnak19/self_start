@@ -8,7 +8,7 @@
 					</span>
 				</button>
 				<h4 class="modal-title" id="exampleModalLabel">
-					Fidélisation
+					FidÃ©lisation
 				</h4>
 			</div>
 			<form method="post" action="fidelisation/traitement_fidelisation.php">
@@ -55,7 +55,7 @@
 					<button type="button" class="btn btn-warning" data-dismiss="modal">
 						Annuler
 					</button>
-					<input type="submit" class="btn btn-success" value="Fidéliser">
+					<input type="submit" class="btn btn-success" value="FidÃ©liser">
 				</div>
 			</form>
 		</div>
