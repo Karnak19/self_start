@@ -56,6 +56,5 @@
 			$jour=date ("Y-m-d");
 			return $jour;
 		}
-
 	}
 ?>

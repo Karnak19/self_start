@@ -1,5 +1,4 @@
 <?php
-	//include ("../inc/configure.inc.php");
 	class client
 	{
 		private $id_cli=0;
@@ -84,7 +83,7 @@
 			return $this->solde_cli;
 		}
 
-		public function set_lundi ($id_cli)
+		public function set_lundi ($id)
 		{
 			$SQL_lundichoix= "UPDATE lb_clients SET lun_midi=1 WHERE id_cli='$id' ";
 			$Req_lundichoix= mysql_query($SQL_lundichoix);
@@ -92,28 +91,28 @@
 	
 		}
 
-		public function set_mardi ($id_cli)
+		public function set_mardi ($id)
 		{
 			$SQL_mardichoix= "UPDATE lb_clients SET mar_midi=1 WHERE id_cli='$id' ";
 			$Req_mardichoix= mysql_query($SQL_mardichoix);
 			$Res_mardichoix=mysql_fetch_array($Req_mardichoix);
 		}
 
-		public function set_mercredi ($id_cli)
+		public function set_mercredi ($id)
 		{
 			$SQL_mercredichoix= "UPDATE lb_clients SET merc_midi=1 WHERE id_cli='$id' ";
 			$Req_mercredichoix= mysql_query($SQL_mercredichoix);
 			$Res_mercredichoix=mysql_fetch_array($Req_mercredichoix);
 		}
 
-		public function set_jeudi ($id_cli)
+		public function set_jeudi ($id)
 		{
 			$SQL_jeudichoix= "UPDATE lb_clients SET jeu_midi=1 WHERE id_cli='$id' ";
 			$Req_jeudichoix= mysql_query($SQL_jeudichoix);
 			$Res_jeudichoix=mysql_fetch_array($Req_jeudichoix);
 		}
 
-		public function set_vendredi ($id_cli)
+		public function set_vendredi ($id)
 		{
 			$SQL_vendredichoix= "UPDATE lb_clients SET ven_midi=1 WHERE id_cli='$id' ";
 			$Req_vendredichoix= mysql_query($SQL_vendredichoix);
@@ -130,7 +129,7 @@
 			$SQL="SELECT * FROM lb_clients";
 			$req=mysql_query ($SQL) or die (mysql_error ());
 			$res=mysql_fetch_array ($req);
-			$id=$res['id_cli'];
+			$id=$res ["id_cli"];
 			$nom=$res ["nom_cli"];
 			$prenom=$res ["prenom_cli"];
 			$client=$id." ".$nom." ".$prenom;
