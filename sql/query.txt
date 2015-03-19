@@ -10,3 +10,6 @@ INSERT INTO `lb_self`.`lb_clients` (`id_cli`, `nom_cli`, `prenom_cli`, `reg_cli`
  
  INSERT INTO `lb_self`.`lb_repas` (`id_repas`, `lib_repas`, `tarif_repas`) VALUES ('1', 'Repas Complet', '8'), ('2', 'Cafe', '1');
  
+ 
+ 
+ ALTER TABLE `lb_repas` ADD `valide` VARCHAR(3) NOT NULL DEFAULT 'oui' AFTER `tarif_repas`;
