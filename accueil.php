@@ -18,7 +18,7 @@
 						if($_SESSION['type'] == 'comptabilite' || $_SESSION['type'] == 'superadmin')
 			                        {	//Affichage des boutons pour la compta et l'admin
 					?>
-							<a href="repas/repas.php"><img src="img/gear31.png"></a>
+							<a type="button" data-toggle="modal" data-target="#repas"><img src="img/gear31.png"></a>
 							<a href="compte/credit_compte.php" data-toggle="modal" data-target="#cred"><img src="img/dollar159.png"></a>
 					<?php
 						}
@@ -32,6 +32,7 @@
 		<?php
 			//Include des Modals Bootstrap
 			include 'fidelisation/fidelisation.php'; //Fidélisation
+			include 'repas/repas.php'; //Repas
 		?>
 		
 		<!-- --------------------------------- SCRIPTS ------------------------------------- -->
