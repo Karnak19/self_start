@@ -1,1 +1,5 @@
 ALTER TABLE `lb_credit` ADD `id_client` INT( 11 ) NOT NULL ;
+
+
+
+INSERT INTO `lb_self`.`lb_clients` (`id_cli`, `nom_cli`, `prenom_cli`, `reg_cli`, `clas_cli`, `lun_midi`, `mar_midi`, `merc_midi`, `jeu_midi`, `ven_midi`, `solde_cli`) VALUES ('1', 'CHAUD', 'FE', 'etudiant', 'sio', '0', '0', '0', '0', '0', '15'), ('2', 'SAGEAU', 'pierre', 'etudiant', 'sio', '0', '0', '0', '0', '0', '10');
