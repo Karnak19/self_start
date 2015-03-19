@@ -29,27 +29,27 @@
                         </select>
                      </div>
                      <div class="btn-group" data-toggle="buttons">
-                        <label class="btn btn-primary">
+                        <label class="btn btn-default">
                            <input type="checkbox" autocomplete="off"> Lundi
                         </label>
-                        <label class="btn btn-primary">
+                        <label class="btn btn-default">
                            <input type="checkbox" autocomplete="off"> Mardi
                         </label>
-                        <label class="btn btn-primary">
+                        <label class="btn btn-default">
                            <input type="checkbox" autocomplete="off"> Mercredi
                         </label>
-                        <label class="btn btn-primary">
+                        <label class="btn btn-default">
                            <input type="checkbox" autocomplete="off"> Jeudi
                         </label>
-                        <label class="btn btn-primary">
+                        <label class="btn btn-default">
                            <input type="checkbox" autocomplete="off"> Vendredi
                         </label>
                      </div>
                   </form>
                </div>
                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
-                  <button type="button" class="btn btn-primary">Fidéliser</button>
+                  <button type="button" class="btn btn-warning" data-dismiss="modal">Annuler</button>
+                  <button type="button" class="btn btn-success">Fidéliser</button>
                </div>
             </div>
          </div>

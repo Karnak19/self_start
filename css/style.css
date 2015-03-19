@@ -35,6 +35,11 @@ a {
     cursor: pointer;
 }
 
+.btn-default.active {
+    background-color: #5CB85C;
+    border-color: #4CAE4C;
+}
+
 /* Login */
 #log {
     width: 420px;
@@ -217,7 +222,7 @@ a {
 }
 
 .menu img {
-    height: 180px;
+    height: 200px;
     margin: 25px;
     opacity: 0.5;
 }
