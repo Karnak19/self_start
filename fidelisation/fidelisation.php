@@ -47,7 +47,7 @@
                </div>
                <div class="modal-footer">
                   <button type="button" class="btn btn-warning" data-dismiss="modal">Annuler</button>
-                  <button type="button" class="btn btn-success" onclick="location='traitement_fidelisation.php'">Fidéliser</button>
+                  <button type="button" class="btn btn-success" onclick="location='fidelisation/traitement_fidelisation.php?id=<?php echo $id; ?>'">Fidéliser</button>
                </div>
             </div>
          </div>
