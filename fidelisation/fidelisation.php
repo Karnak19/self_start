@@ -38,16 +38,16 @@
 							<input type="checkbox" autocomplete="off" name="lundi"> Lundi
 						</label>
 						<label class="btn btn-default">
-							<input type="checkbox" autocomplete="off"> Mardi
+							<input type="checkbox" autocomplete="off" name="mardi"> Mardi
 						</label>
 						<label class="btn btn-default">
-							<input type="checkbox" autocomplete="off"> Mercredi
+							<input type="checkbox" autocomplete="off" name="mercredi"> Mercredi
 					   </label>
 					   <label class="btn btn-default">
-							<input type="checkbox" autocomplete="off"> Jeudi
+							<input type="checkbox" autocomplete="off" name="jeudi"> Jeudi
 					   </label>
 					   <label class="btn btn-default">
-							<input type="checkbox" autocomplete="off"> Vendredi
+							<input type="checkbox" autocomplete="off" name="vendredi"> Vendredi
 					   </label>
 					</div>
 				</div>

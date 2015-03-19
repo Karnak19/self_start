@@ -13,7 +13,7 @@
 	}
 	if (isset ($_POST ["mercredi"]))
 	{
-		$mecredi=1;
+		$mercredi=1;
 	}
 	if (isset ($_POST ["jeudi"]))
 	{
@@ -26,12 +26,44 @@
 
 	$client=new client ($id_array, null, null, null, null, null, null, null, null, null, null);
 
-	if ($lundi==1 || $mardi==1 || $mercredi==1 || $jeudi==1 || $vendredi==1)
+	if ($lundi==1)
 	{
 		foreach ($id_array as $select_value)
 		{
 			$select_value=$select_value;
 			$client->set_lundi ($select_value);
+		}
+	}
+	if ($mardi==1)
+	{
+		foreach ($id_array as $select_value)
+		{
+			$select_value=$select_value;
+			$client->set_mardi ($select_value);
+		}
+	}
+	if ($mercredi==1)
+	{
+		foreach ($id_array as $select_value)
+		{
+			$select_value=$select_value;
+			$client->set_mercredi ($select_value);
+		}
+	}
+	if ($jeudi==1)
+	{
+		foreach ($id_array as $select_value)
+		{
+			$select_value=$select_value;
+			$client->set_jeudi ($select_value);
+		}
+	}
+	if ($vendredi==1)
+	{
+		foreach ($id_array as $select_value)
+		{
+			$select_value=$select_value;
+			$client->set_vendredi ($select_value);
 		}
 	}
 
