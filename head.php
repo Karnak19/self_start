@@ -16,8 +16,12 @@
    <link href="css/jquery.multiselect.filter.css" rel="stylesheet">
    <script src="js/jquery.multiselect.js"></script>
    <script src="js/jquery.multiselect.filter.js"></script>
+
    
    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/tab.css">
+   <script src="js/script.js"></script>
+   <script type="text/javascript" src="js/function.js"></script>
 
    <?php
       echo $title;
