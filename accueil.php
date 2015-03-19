@@ -30,7 +30,7 @@
 			</center>
 		</div>
 		<?php
-			//Include des Modal Bootstrap
+			//Include des Modals Bootstrap
 			include 'fidelisation/fidelisation.php'; //Fidélisation
 		?>
 	</body>

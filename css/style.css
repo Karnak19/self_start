@@ -31,6 +31,10 @@ body {
     font-family: avantgarde;
 }
 
+a {
+    cursor: pointer;
+}
+
 /* Login */
 #log {
     width: 420px;
