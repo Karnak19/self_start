@@ -124,5 +124,17 @@
 		{
 			$this->solde_cli=$solde;
 		}
+		
+		public function client ($id)
+		{
+			$SQL="SELECT id_cli, nom_cli, prenom_cli FROM lb_clients WHERE id_cli='$id'";
+			$req=mysql_query ($SQL) or die (mysql_error ());
+			$res=mysql_fetch_array ($req);
+			$id=$res['id_cli'];
+			$nom=$res ["nom_cli"];
+			$prenom=$res ["prenom_cli"];
+			$client=$id." ".$nom." ".$prenom;
+			return $client;
+		}
 	}
 ?>

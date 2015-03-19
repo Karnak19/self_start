@@ -14,24 +14,10 @@
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 		
-	<?php
-	echo $title;
-		
-	/*require_once 'inc/Mobile_Detect.php';
-    
-	$detect = new Mobile_Detect();
-	
-	// Check for any mobile device.
-	if ($detect->isMobile())
-	{
-		echo '<link rel="stylesheet" href="stylesheets/style_mob.css" type="text/css">';
-		echo '<link rel="stylesheet" href="stylesheets/bouton_mob.css" type="text/css">';
-	}
-	else
-	{*/
-		echo '<link rel="stylesheet" href="css/style.css" type="text/css">';
-		echo '<link rel="stylesheet" href="css/bouton.css" type="text/css">';
-	//}
+         <?php
+         echo $title;
+         
+         require_once('classes/client.inc.php');
 	?>
 	<!--<link rel="icon" type="image/x-icon" href="img/AAB.ico">-->
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
