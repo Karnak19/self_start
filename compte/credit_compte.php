@@ -2,7 +2,7 @@
 <html>
    <?php
       include ('../inc/configure.inc.php');
-      include ('../head.php');
+    
    ?>
    <form method="post" action="traitement_credit.php">
    <body>
