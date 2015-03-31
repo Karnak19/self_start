@@ -1,3 +1,4 @@
+
 <div class="modal fade" id="cred" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
 		<div class="modal-content">
@@ -7,6 +8,7 @@
             </div>
 
             <div class="modal-body">
+
    <form method="post" action="traitement_credit.php">
    <body>
 		<h1><title> Credit compte </title></h1>
