@@ -1,8 +1,6 @@
-
 <html>
    <?php
       include ('../inc/configure.inc.php');
-    
    ?>
    <form method="post" action="traitement_credit.php">
    <body>
