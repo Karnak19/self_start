@@ -15,9 +15,9 @@ include 'classes/date.class.inc.php';
 
 			<ul><label> Service : </label> 
 		<select name="liste_serv" required>
-		<option value=""> Matin </option>
-		<option value="1"> Midi </option>
-		<option value="2">Soir</option>
+		<option value="mat"> Matin </option>
+		<option value="mid"> Midi </option>
+		<option value="soir">Soir</option>
 		</select></ul>
 				<ul><label>Code Client : </label> <input type="text" name="codecli" value=" " required/></ul>
              <input type="submit" class="bouton" value="Valider" name="Valider"></ul>	
