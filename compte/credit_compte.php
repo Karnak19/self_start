@@ -4,6 +4,7 @@
       include ('../inc/configure.inc.php');
       include ('../head.php');
    ?>
+   <form method="post" action="traitement_credit.php">
    <body>
 		<h1><title> Credit compte </title></h1>
        
@@ -26,6 +27,7 @@
 		<option value="2">Cheque</option>
 		</select><br><br>
 		
-		<input type="submit" name="" value="Valider">
+		<input type="submit" name="valider" value="Valider">
    </body>
+   </form>
 </html>
