@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <html>
    <?php
       include ('../inc/configure.inc.php');
@@ -10,27 +10,19 @@
 	   <br><h1 style= "text-align:center;">CREDIT COMPTE</h1><br><br>
 	
 	   <br>
-	   <label>Nom entreprise :</label>
-       <input type="text" name="NOM_ENT" value="" /><br>
+	   <label>Etudiant : </label>
+       <input type="text" name="etudiant" value="" /><br>
 	   
        
-       <label>Raison social :</label>
-       <input type="text" name="RAS_ENT" value="" /><br>
+       <label>Montant :</label>
+       <input type="text" name="montant_cred" value="" /><br>
 		
-		<label> Rue : </label> 
-		<input type="text" name="RUE_ENT" value="" /><br>
-		<label> Code postal : </label> 
-		<input type="text" name="COP_ENT" value="" /><br>
-		<label> Ville : </label> 
-		<input type="text" name="VIL_ENT" value="" /><br>
-			
-		<label> Telephone : </label> 
-		<input type="text" name="TEL_ENT" value="" /><br>
-		<label> Mail : </label> 
-		<input type="text" name="MAI_ENT" value="" /><br>
-		<label> Login : </label> 
-		<input type="text" name="LOG_ENT" value=""required/><br>	
-	   
-	   
+		<label> Date transaction : </label> 
+		<input type="date" name="date_cred" value="" /><br>
+		<label> Type de paiement : </label> 
+		<select name="liste_type">
+		<option value=""> Choisissez un type de paiement </option>
+		<option value="1"> Especes </option>
+		<option value="2">Cheque</option>
    </body>
 </html>
