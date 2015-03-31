@@ -24,5 +24,8 @@
 		<option value=""> Choisissez un type de paiement </option>
 		<option value="1"> Especes </option>
 		<option value="2">Cheque</option>
+		</select><br><br>
+		
+		<input type="submit" name="" value="Valider">
    </body>
 </html>
