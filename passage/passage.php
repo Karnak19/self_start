@@ -12,7 +12,13 @@ include 'classes/date.class.inc.php';
                <div class="modal-body">
 			   <?php $datenow=date ("Y-m-d");?>
 				<ul><label>Jour : </label> <input type="text" name="day" value="<?php echo us_to_fr($datenow);?>" required /></ul>
-				<ul><label>Service : </label> <input type="text" name="serv" value=" " required/></ul>
+
+			<ul><label> Service : </label> 
+		<select name="liste_serv" required>
+		<option value=""> Matin </option>
+		<option value="1"> Midi </option>
+		<option value="2">Soir</option>
+		</select></ul>
 				<ul><label>Code Client : </label> <input type="text" name="codecli" value=" " required/></ul>
              <input type="submit" class="bouton" value="Valider" name="Valider"></ul>	
           </div>

@@ -12,10 +12,10 @@
    <link rel="stylesheet" href="css/font-awesome.min.css">
 
    <!-- Include Multiselect -->
-   <link href="css/jquery.multiselect.css" rel="stylesheet">
+ <!--  <link href="css/jquery.multiselect.css" rel="stylesheet">
    <link href="css/jquery.multiselect.filter.css" rel="stylesheet">
    <script src="js/jquery.multiselect.js"></script>
-   <script src="js/jquery.multiselect.filter.js"></script>
+   <script src="js/jquery.multiselect.filter.js"></script>-->
 
    
    <link rel="stylesheet" href="css/style.css">
