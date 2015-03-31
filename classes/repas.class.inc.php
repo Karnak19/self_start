@@ -14,17 +14,17 @@
 
 		public function get_id ()
 		{
-			return $this->id_repas;
+			return ($this->id_repas);
 		}
 
 		public function get_libelle ()
 		{
-			return $this->lib_repas;
+			return ($this->lib_repas);
 		}
 
 		public function get_tarif ()
 		{
-			return $this->tarif_repas;
+			return ($this->tarif_repas);
 		}
 
 		public function set_libelle ($libelle)
@@ -44,7 +44,7 @@
 			$req=mysql_query ($SQL) or die (mysql_error ());
 			$res=mysql_fetch_array ($req);
 			$nom=$res ["lib_repas"];
-			return $nom;
+			return ($nom);
 		}
 		
 		public function tarif_repas ($id)
@@ -53,19 +53,24 @@
 			$req=mysql_query ($SQL) or die (mysql_error ());
 			$res=mysql_fetch_array ($req);
 			$tarif=$res ["tarif_repas"];
-
-			return $tarif;
+			return ($tarif);
 		}
 		
 		public function ajout_repas ($lib, $tarif)
 		{
-			$SQL="INSERT INTO lb_repas (id_repas,lib_repas,tarif_repas) VALUES('', '$lib', '$tarif')";
+			$SQL="INSERT INTO lb_repas (id_repas, lib_repas, tarif_repas) VALUES ('', '$lib', '$tarif')";
+			mysql_query ($SQL) or die (mysql_error ());
+		}
+
+		public function mod_repas ($id, $prix)
+		{
+			$SQL="UPDATE lb_repas SET tarif_repas='$prix' WHERE id_repas='$id'";
 			mysql_query ($SQL) or die (mysql_error ());
 		}
 		
-		public function sup_repas ($id)
+		public function suppr_repas ($id)
 		{
-			$SQL="UPDATE lb_repas SET valide_repas='n' WHERE id_repas='$id'";
+			$SQL="UPDATE lb_repas SET valide='non' WHERE id_repas='$id'";
 			mysql_query ($SQL) or die (mysql_error ());
 		}
 	}
