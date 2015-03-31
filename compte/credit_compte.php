@@ -10,14 +10,22 @@
 			<ul>Etudiant : <input type="text" name="id_client" value="" /></ul>
 			<ul>Montant : <input type="text" name="montant_cred" value="" /></ul>
 			<ul>Date transaction : <input type="date" name="date_cred" value="" /></ul>
-			<ul>Type de paiement : 
-			    <select name="ulste_type">
-				<option value="">Choisissez un type de paiement</option>
-				<option value="1">Especes</option>
-				<option value="2">Chèque</option>
-			    </select>
+			<ul><div class="btn-group" data-toggle="buttons">
+				<label class="btn btn-default">
+				    <input type="radio" autocomplete="off" name="1">Espèce
+				</label>
+				<label class="btn btn-default">
+				    <input type="radio" autocomplete="off" name="2">Chèque
+				</label>
+			    </div>
 			</ul>
-			<ul><input type="submit" name="valider" value="Valider"></ul> 
+	    </div>
+	    <div class="modal-footer">
+		<button type="button" class="btn btn-warning" data-dismiss="modal">
+		    Annuler
+		</button>
+		<input type="submit" class="btn btn-success" value="Créditer">
+		</form>
 	    </div>
 	</div>
     </div>
