@@ -1,6 +1,3 @@
-<?php
-	require_once ("./classes/repas.class.inc.php");
-?>
 <div class="modal fade" id="repas" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
@@ -24,15 +21,9 @@
 				<table id="tblData">
 					<thead> 
 						<tr> 
-							<th>
-								nom
-							</th> 
-							<th>
-								prix
-							</th> 
-							<th>
-								commandes
-							</th>
+							<th>nom</th> 
+							<th>prix</th> 
+							<th>commandes</th>
 						</tr> 
 					</thead> 
 					<tbody>
@@ -51,11 +42,11 @@
 											.$tarif." &#128".
 										"</td>
 										<td>
-											<button onclick='repas_gerer.php?id=$i&action=mod'>
+											<button onclick='repas_gerer.php?id='".$i."'&action=mod'>
 												<img src='./img/Edit32.png'>
 											</button>
 											<br>
-											<button onclick='repas_gerer.php?id=$i&action=suppr'>
+											<button onclick='repas_gerer.php?id='".$i."'&action=suppr'>
 												<img src='./img/Delete32.png'>
 											</button>
 										</td>
@@ -64,6 +55,7 @@
 						?>
 					</tbody> 
 				</table>
+				<div class="clear"></div>
 			</div>
 		</div>
 	</div>
