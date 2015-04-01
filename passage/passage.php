@@ -1,27 +1,36 @@
-<?php
-include 'classes/date.class.inc.php';
-?>
-      <div class="modal fade" id="passa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-         <div class="modal-dialog">
-            <div class="modal-content">
-               <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h4 class="modal-title" id="exampleModalLabel">Passage</h4>
-               </div>
-
-               <div class="modal-body">
-			   <?php $datenow=date ("Y-m-d");?>
-				<ul><label>Jour : </label> <input type="text" name="day" value="<?php echo us_to_fr($datenow);?>" required /></ul>
-
-			<ul><label> Service : </label> 
-		<select name="liste_serv" required>
-		<option value="mat"> Matin </option>
-		<option value="mid"> Midi </option>
-		<option value="soir">Soir</option>
-		</select></ul>
-				<ul><label>Code Client : </label> <input type="text" name="codecli" value=" " required/></ul>
-             <input type="submit" class="bouton" value="Valider" name="Valider"></ul>	
-          </div>
-            </div>
+<div class="modal fade" id="passa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="exampleModalLabel">Passage</h4>
          </div>
+         <div class="modal-body" id="pass">
+            <form>
+                     <?php $datenow=date ("Y-m-d");?>
+                          <ul>Jour : <?php echo us_to_fr($datenow);?></ul>
+
+                  <ul><div class="btn-group" data-toggle="buttons">
+				<label class="btn btn-default">
+				    <input type="radio" autocomplete="off" name="1">Matin
+				</label>
+				<label class="btn btn-default">
+				    <input type="radio" autocomplete="off" name="2">Midi
+				</label>
+                                <label class="btn btn-default">
+				    <input type="radio" autocomplete="off" name="1">Soir
+				</label>
+			    </div>
+			</ul>
+                          <ul>Code Client : <input type="text" name="codecli" value=" " required/></ul>
+         </div>
+         <div class="modal-footer">
+	    <button type="button" class="btn btn-warning" data-dismiss="modal">
+	       Annuler
+	    </button>
+	    <input type="submit" class="btn btn-success" value="Valider">
+               </form>
+	 </div>
       </div>
+   </div>
+</div>

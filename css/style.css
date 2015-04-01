@@ -68,9 +68,14 @@ a {
     text-align: right;
 }
 
-.modal-body .btn {
+#cred .btn {
     width: 100px;
 }
+
+#pass .btn {
+    width: 66.6px;
+}
+
 
 /*  ----------------------
  *  --------Login--------

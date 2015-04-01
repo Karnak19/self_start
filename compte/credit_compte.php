@@ -5,7 +5,7 @@
 		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 		<h4 class="modal-title" id="exampleModalLabel">Credit compte</h4>
 	    </div>
-	    <div class="modal-body">
+	    <div class="modal-body" id="cred">
 		<form method="post" action="compte/traitement_credit.php">
 			<ul>Etudiant : <input type="text" name="id_client" value="" /></ul>
 			<ul>Montant : <input type="text" name="montant_cred" value="" /></ul>

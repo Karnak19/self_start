@@ -27,6 +27,8 @@
       echo $title;
       
       require_once('classes/client.class.inc.php');
+      require_once('classes/date.class.inc.php');
+
    ?>
    <link rel="icon" type="image/x-icon" href="img/logo.png">
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
