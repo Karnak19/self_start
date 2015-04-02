@@ -22,20 +22,13 @@
    <script src="<?php echo $link; ?>js/jquery.multiselect.js"></script>
    <script src="<?php echo $link; ?>js/jquery.multiselect.filter.js"></script>
 
-<<<<<<< HEAD
-   <!--<link rel="stylesheet" type="text/css" href="css/index.css"/><!--page repas-->
-   <link rel="stylesheet" href="css/style.css">
-   <link rel="stylesheet" href="css/tab.css">
-   <script type="text/javascript" src="js/inlinemod.js"></script><!--page repas tableau-->
-=======
+
+   <script type="text/javascript" src="<?php echo $link; ?>js/inlinemod.js"></script><!--page repas tableau-->
+
    
    <link rel="stylesheet" href="<?php echo $link; ?>css/style.css">
-   <link rel="stylesheet" href="<?php echo $link; ?>css/tab.css">
    <link href="<?php echo $link; ?>css/autocomplete.css" rel="stylesheet">
-      
-   <script src="<?php echo $link; ?>js/script.js"></script>
-   <script type="text/javascript" src="<?php echo $link; ?>js/function.js"></script>
->>>>>>> origin/master
+
 
    <?php
       echo $title;
