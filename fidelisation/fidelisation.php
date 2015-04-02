@@ -14,24 +14,10 @@
 			<form method="post" action="fidelisation/traitement_fidelisation.php">
 				<div class="modal-body">
 					<div class="form-group">
-						<select id="client" name="client[]" multiple="multiple">
-							<?php
-								$sql= "SELECT * FROM lb_clients";
-								$req= mysql_query($sql);
-								while ($res= mysql_fetch_array($req))
-								{
-									$id=$res['id_cli'];
-									$nom=$res['nom_cli'];
-									$prenom=$res['prenom_cli'];
-									echo "<option value='".$id."'>".$nom." ".$prenom."</option>";
-								}
-							?>
-						</select>
-						<?php
-							echo "<img src='img/client/".$id.".jpg'>";
-						?>
-						<div class="clear">
-						</div>
+                                                <div class="input_container">
+                                                   <input type="text" id="nom_fid" onkeyup="autocompletfid()">
+                                                   <ul id="list_nom_fid"></ul>
+                                                </div>
 					</div>
 					<div class="btn-group" data-toggle="buttons">
 						<label class="btn btn-default">

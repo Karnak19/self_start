@@ -22,6 +22,7 @@
 				<table id="table-utilisateurs"> 
 						<tr> 
 							<th>Nom</th> 
+<<<<<<< HEAD
 							<th>Tarif</th> 
 					
 						</tr> 
@@ -39,6 +40,41 @@
 	?>
 	</table>
 				<div class="clear"></div>
+=======
+							<th>Prix</th> 
+							<th>Commandes</th>
+						</tr> 
+					</thead> 
+					<tbody>
+						<?php
+							for ($i=1; $i<=$id; $i++)
+							{
+								$repas=new repas ($i, null, null);
+								$nom=$repas->nom_repas ($i);
+								$tarif=$repas->tarif_repas ($i);
+								echo "<tr>
+										<td>
+											<input type='hidden' name='id' value='$i'>"
+											.$nom.
+										"</td>
+										<td>"
+											.$tarif." &#128".
+										"</td>
+										<td>
+											<button onclick='repas_gerer.php?id=".$i."&action=mod'>
+												<img src='./img/Edit32.png'>
+											</button>
+											<br>
+											<button onclick='repas_gerer.php?id=".$i."&action=suppr'>
+												<img src='./img/Delete32.png'>
+											</button>
+										</td>
+									</tr>";
+							}
+						?>
+					</tbody> 
+				</table>
+>>>>>>> origin/master
 			</div>
 		</div>
 	</div>
