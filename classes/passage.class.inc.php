@@ -18,27 +18,27 @@
 
 		public function get_id ()
 		{
-			return $this->id_passage;
+			return ($this->id_passage);
 		}
 
 		public function get_date ()
 		{
-			return $this->date_passage;
+			return ($this->date_passage);
 		}
 
 		public function get_service ()
 		{
-			return $this->serv_passage;
+			return ($this->serv_passage);
 		}
 
 		public function get_libelle ()
 		{
-			return $this->lib_repas;
+			return ($this->lib_repas);
 		}
 
 		public function get_montant ()
 		{
-			return $this->mont_repas;
+			return ($this->mont_repas);
 		}
 
 		public function set_date ($date)
@@ -54,7 +54,28 @@
 		public function jour ()
 		{
 			$jour=date ("Y-m-d");
-			return $jour;
+			return ($jour);
+		}
+
+		public function service ()
+		{
+			$heure=date ("H:i");
+			if (($heure>="03:00") && ($heure<"10:00"))
+			{
+				$service="matin";
+			}
+			else
+			{
+				if (($heure>="10:00") && ($heure<"17:00"))
+				{
+					$service="midi";
+				}
+				else
+				{
+					$service="soir";
+				}
+			}
+			return ($service);
 		}
 	}
 ?>
