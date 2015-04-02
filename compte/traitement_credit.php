@@ -16,3 +16,4 @@
 		$client2->crediter_solde($solde,$montant,$client); //mise à jour du solde du client
 
 	}
+?>
