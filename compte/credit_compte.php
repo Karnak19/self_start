@@ -11,10 +11,10 @@
 			<ul>Montant : <input type="text" name="montant_cred" value="" /></ul>
 			<ul><div class="btn-group" data-toggle="buttons">
 				<label class="btn btn-default">
-				    <input type="radio" autocomplete="off" name="1">Espèce
+				    <input type="radio" autocomplete="off" name="type" value="1">Espèce
 				</label>
 				<label class="btn btn-default">
-				    <input type="radio" autocomplete="off" name="2">Chèque
+				    <input type="radio" autocomplete="off" name="type" value="2">Chèque
 				</label>
 			    </div>
 			</ul>
@@ -23,7 +23,7 @@
 		<button type="button" class="btn btn-warning" data-dismiss="modal">
 		    Annuler
 		</button>
-		<input type="submit" class="btn btn-success" value="Créditer">
+		<input type="submit" class="btn btn-success" value="Créditer" name="Crediter" >
 		</form>
 	    </div>
 	</div>

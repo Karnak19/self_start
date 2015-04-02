@@ -11,7 +11,7 @@
 		private $mer=false;
 		private $jeu=false;
 		private $ven=false;
-		private $solde_cli=0;
+		private $solde=0;
 
 		public function client ($id, $nom, $prenom, $regime, $classe, $lundi, $mardi, $mercredi, $jeudi, $vendredi, $solde)
 		{
@@ -78,9 +78,13 @@
 			return $this->ven;
 		}
 
-		public function get_solde ()
+		public function obtenir_solde ($id_cli)
 		{
-			return $this->solde_cli;
+			$SQL="SELECT solde_cli FROM lb_clients WHERE id_cli='$id_cli'";
+			$req=mysql_query ($SQL) or die (mysql_error ());
+			$res=mysql_fetch_array ($req);
+			$solde=$res['solde_cli'];
+			return $solde;
 		}
 
 		public function set_lundi ($select_value)
@@ -117,6 +121,12 @@
 		public function set_solde ($solde)
 		{
 			$this->solde_cli=$solde;
+		}
+		
+		public function crediter_solde($solde,$montant,$client)
+		{
+			$SQLcrediter="UPDATE lb_clients SET solde_cli='$solde'+'$montant' WHERE id_cli='$client'";
+			mysql_query($SQLcrediter) or die (mysql_error());
 		}
 		
 		public function afficherclient ()
