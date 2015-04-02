@@ -11,6 +11,7 @@ $query = $pdo->prepare($sql);
 $query->bindParam(':keyword', $keyword, PDO::PARAM_STR);
 $query->execute();
 $list = $query->fetchAll();
+
 foreach ($list as $rs) {
 	// put in bold the written text
 	$nom_cli = str_replace($_POST['keyword'], '<b>'.$_POST['keyword'].'</b>', $rs['nom_cli']);
@@ -18,6 +19,6 @@ foreach ($list as $rs) {
 	$id = $rs['id_cli'];
 
 	// add new option
-    echo '<li onclick="set_item(\''.str_replace("'", "\'", $rs['prenom_cli']." ".$rs['nom_cli']).'\')"><img src="img/client/'.$id.'.jpg">'.$prenom_cli.' '.$nom_cli.'</li>';
+    echo '<li onclick="set_item_cred(\''.str_replace("'", "\'", $rs['prenom_cli']." ".$rs['nom_cli']).'\')"><img src="img/client/'.$id.'.jpg">'.$prenom_cli.' '.$nom_cli.'</li>';
 }
 ?>

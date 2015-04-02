@@ -5,19 +5,23 @@
 		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 		<h4 class="modal-title" id="exampleModalLabel">Credit compte</h4>
 	    </div>
+	    <form method="post" action="compte/traitement_credit.php">
 	    <div class="modal-body" id="cred">
-		<form method="post" action="compte/traitement_credit.php">
-			<ul>Etudiant : <input type="text" name="id_client" value="" /></ul>
-			<ul>Montant : <input type="text" name="montant_cred" value="" /></ul>
-			<ul><div class="btn-group" data-toggle="buttons">
-				<label class="btn btn-default">
-				    <input type="radio" autocomplete="off" name="type" value="1">Espèce
-				</label>
-				<label class="btn btn-default">
-				    <input type="radio" autocomplete="off" name="type" value="2">Chèque
-				</label>
-			    </div>
-			</ul>
+		<div class="form-group">
+		    <div class="input_container">
+			<input type="text" id="nom_cred" onkeyup="autocompletcred()">
+			<ul id="list_nom_cred"></ul>
+		    </div>
+		</div>
+		Montant : <input type="text" name="montant_cred" value="" />
+		<div class="btn-group" data-toggle="buttons">
+		    <label class="btn btn-default">
+			<input type="radio" autocomplete="off" name="type" value="1">Espèce
+		    </label>
+		    <label class="btn btn-default">
+			<input type="radio" autocomplete="off" name="type" value="2">Chèque
+		    </label>
+		</div>
 	    </div>
 	    <div class="modal-footer">
 		<button type="button" class="btn btn-warning" data-dismiss="modal">
