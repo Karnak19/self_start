@@ -4,6 +4,11 @@
    <script src="js/jquery-ui.min.js" type="text/javascript"></script>
    <link href="css/jquery-ui.css" rel="stylesheet">
       
+   <script type="text/javascript" src="js/jquery.autocomp.js"></script>
+   <link href="css/autocomplete.css" rel="stylesheet">
+
+
+      
    <!-- Include Bootstrap -->
    <link rel="stylesheet" href="css/bootstrap.min.css">
    <script src="js/bootstrap.min.js"></script>
@@ -33,4 +38,5 @@
    ?>
    <link rel="icon" type="image/x-icon" href="img/logo.png">
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
 </head>
