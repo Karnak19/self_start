@@ -9,7 +9,6 @@
 		<form method="post" action="compte/traitement_credit.php">
 			<ul>Etudiant : <input type="text" name="id_client" value="" /></ul>
 			<ul>Montant : <input type="text" name="montant_cred" value="" /></ul>
-			<ul>Date transaction : <input type="date" name="date_cred" value="" /></ul>
 			<ul><div class="btn-group" data-toggle="buttons">
 				<label class="btn btn-default">
 				    <input type="radio" autocomplete="off" name="1">Espèce

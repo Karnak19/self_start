@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="modal fade" id="passa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
    <div class="modal-dialog">
       <div class="modal-content">
@@ -34,3 +35,13 @@
       </div>
    </div>
 </div>
+=======
+<html>
+   <?php
+      include ('../inc/configure.inc.php');
+      include ('../head.php');
+   ?>
+   <body>
+   </body>
+</html>
+>>>>>>> parent of 3bcabf3... photo dans passage
