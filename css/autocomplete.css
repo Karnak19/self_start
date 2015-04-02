@@ -10,6 +10,17 @@
 }
 .input_container ul {
 	padding-left: 0px;
+	margin-left: 20px;
+	width: 300px;
+	border: 1px solid #eaeaea;
+	position: absolute;
+	z-index: 9;
+	background: #f3f3f3;
+	list-style: none;
+}
+
+.divg .input_container ul {
+	padding-left: 0px;
 	margin-left: 96px;
 	width: 300px;
 	border: 1px solid #eaeaea;
