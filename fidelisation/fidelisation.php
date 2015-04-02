@@ -31,12 +31,6 @@
                                                    <input type="text" id="nom_cli" onkeyup="autocomplet()">
                                                    <ul id="list_nom_cli"></ul>
                                                 </div>
-						<?php
-							echo "<img src='img/client/".$id.".jpg'>";
-						?>
-						<div class="clear">
-						</div>
-                                                
 					</div>
 					<div class="btn-group" data-toggle="buttons">
 						<label class="btn btn-default">
