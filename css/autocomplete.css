@@ -3,14 +3,14 @@
 }
 
 .input_container input {
-	width: 200px;
+	width: 300px;
 	padding: 3px;
 	border: 1px solid #cccccc;
 	border-radius: 0;
 }
 .input_container ul {
 	margin-left: 20px;
-	width: 200px;
+	width: 300px;
 	border: 1px solid #eaeaea;
 	position: absolute;
 	z-index: 9;
@@ -19,6 +19,8 @@
 }
 .input_container ul li {
 	padding: 2px;
+	height: 40px;
+	font-size: 20px;
 }
 .input_container ul li:hover {
 	background: #eaeaea;
@@ -26,5 +28,5 @@
 
 .input_container li img {
 	float: left;
-	height: 20px;
+	height: 40px;
 }

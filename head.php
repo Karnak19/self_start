@@ -5,7 +5,7 @@
    <link href="css/jquery-ui.css" rel="stylesheet">
       
    <script type="text/javascript" src="js/jquery.autocomp.js"></script>
-   <link href="css/autocomplete.css" rel="stylesheet">
+   
 
 
       
@@ -23,8 +23,10 @@
    <script src="js/jquery.multiselect.filter.js"></script>
 
    
-   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="http://localhost/self_start/css/style.css">
    <link rel="stylesheet" href="css/tab.css">
+   <link href="css/autocomplete.css" rel="stylesheet">
+      
    <script src="js/script.js"></script>
    <script type="text/javascript" src="js/function.js"></script>
 
