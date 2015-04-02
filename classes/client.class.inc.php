@@ -86,13 +86,12 @@
 			$solde=$res['solde_cli'];
 			return $solde;
 		}
-		
+
 		// FONCTIONS FIDELISATION SELON LE JOUR
 		public function set_lundi ($select_value)
 		{
 			$SQL_lundichoix= "UPDATE lb_clients SET lun_midi='1' WHERE id_cli='$select_value'";
 			mysql_query($SQL_lundichoix) or die (mysql_error());
-	
 		}
 
 		public function set_mardi ($select_value)
@@ -119,8 +118,7 @@
 			mysql_query($SQL_vendredichoix);
 		}
 		// FIN FONCTIONS
-		
-		
+
 		public function set_solde ($solde)
 		{
 			$this->solde_cli=$solde;
