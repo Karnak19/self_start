@@ -1,34 +1,34 @@
 <head>
    <!-- include jQuery -->
-   <script src="http://localhost/self_start/js/jquery.min.js" type="text/javascript"></script>
-   <script src="http://localhost/self_start/js/jquery-ui.min.js" type="text/javascript"></script>
-   <link href="http://localhost/self_start/css/jquery-ui.css" rel="stylesheet">
+   <script src="<?php echo $link; ?>js/jquery.min.js" type="text/javascript"></script>
+   <script src="<?php echo $link; ?>js/jquery-ui.min.js" type="text/javascript"></script>
+   <link href="<?php echo $link; ?>css/jquery-ui.css" rel="stylesheet">
       
-   <script type="text/javascript" src="http://localhost/self_start/js/jquery.autocomp.js"></script>
+   <script type="text/javascript" src="<?php echo $link; ?>js/jquery.autocomp.js"></script>
    
 
 
       
    <!-- Include Bootstrap -->
-   <link rel="stylesheet" href="http://localhost/self_start/css/bootstrap.min.css">
-   <script src="http://localhost/self_start/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="<?php echo $link; ?>css/bootstrap.min.css">
+   <script src="<?php echo $link; ?>js/bootstrap.min.js"></script>
 
    <!-- Include FontAwesome -->
-   <link rel="stylesheet" href="http://localhost/self_start/css/font-awesome.min.css">
+   <link rel="stylesheet" href="<?php echo $link; ?>css/font-awesome.min.css">
 
    <!-- Include Multiselect -->
-   <link href="http://localhost/self_start/css/jquery.multiselect.css" rel="stylesheet">
-   <link href="http://localhost/self_start/css/jquery.multiselect.filter.css" rel="stylesheet">
-   <script src="http://localhost/self_start/js/jquery.multiselect.js"></script>
-   <script src="http://localhost/self_start/js/jquery.multiselect.filter.js"></script>
+   <link href="<?php echo $link; ?>css/jquery.multiselect.css" rel="stylesheet">
+   <link href="<?php echo $link; ?>css/jquery.multiselect.filter.css" rel="stylesheet">
+   <script src="<?php echo $link; ?>js/jquery.multiselect.js"></script>
+   <script src="<?php echo $link; ?>js/jquery.multiselect.filter.js"></script>
 
    
-   <link rel="stylesheet" href="http://localhost/self_start/css/style.css">
-   <link rel="stylesheet" href="http://localhost/self_start/css/tab.css">
-   <link href="http://localhost/self_start/css/autocomplete.css" rel="stylesheet">
+   <link rel="stylesheet" href="<?php echo $link; ?>css/style.css">
+   <link rel="stylesheet" href="<?php echo $link; ?>css/tab.css">
+   <link href="<?php echo $link; ?>css/autocomplete.css" rel="stylesheet">
       
-   <script src="http://localhost/self_start/js/script.js"></script>
-   <script type="text/javascript" src="http://localhost/self_start/js/function.js"></script>
+   <script src="<?php echo $link; ?>js/script.js"></script>
+   <script type="text/javascript" src="<?php echo $link; ?>js/function.js"></script>
 
    <?php
       echo $title;

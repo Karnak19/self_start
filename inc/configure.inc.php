@@ -8,4 +8,5 @@
 	@mysql_select_db ("$db", $database);
 	
 	$title = "<title>Self Start</title>";
+	$link = "http://localhost/self_start/";
 ?>
