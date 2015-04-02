@@ -1,53 +1,44 @@
 <?php
-	require_once ("../classes/repas.class.inc.php");
+//On sort en cas de paramètre manquant ou invalide
 
-	$id=$_GET ["id"];
-	$repas=new repas ($id, $nom, $prix);
-	$nom=$repas->nom_repas ($id);
-	$prix=$repas->tarif_repas ($id);
-	$action=$_GET ["action"];
+if(empty($_GET['id']) or empty($_GET['type']) or empty($_GET['champ']) or empty($_GET['valeur'])
+   or !is_numeric($_GET['id'])
+   or !in_array(
+   		$_GET['champ'],
+        array('lib_repas', 'tarif_repas')
+        ))
+{
+    exit;
+}
 
-	if ($action=="mod")
-	{
-		echo "<div class='modal fade' id='repas' tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true'>
-				<div class='modal-dialog'>
-					<div class='modal-content'>
-						<div class='modal-header'>
-							<button type='button' class='close' data-dismiss='modal' aria-label='Close'>
-								<span aria-hidden='true'>
-									&times;
-								</span>
-							</button>
-							<h4 class='modal-title' id='exampleModalLabel'>
-								Repas
-							</h4>
-						</div>
-						<div class='modal-body'>
-							<label>
-								montant actuel :
-							</label>
-							<input type='number' readonly>
-							<br>
-							<br>
-							<label>
-								nouveau montant :
-							</label>
-							<input type='number' required>
-							&#129
-							<input type='button' onclick='".$repas->mod_repas ($id, $tarif)."; location.href=\"accueil.php\";'>
-						</div>
-					</div>
-				</div>";
-	}
-	else
-	{
-		if ($action=="suppr")
-		{
-			$repas->suppr_repas ($id);
-		}
-		else
-		{
-			header ("Location: accueil.php");
-		}
-	}
+    //Connexion à la base de données
+	$DB_HOST="localhost";
+	$DB_USER="root";
+	$DB_PASSWORD="";
+	$DB_NAME="lb_self";
+    $connexion = mysql_connect($DB_HOST, $DB_USER, $DB_PASSWORD) or die(mysql_error());
+    mysql_select_db($DB_NAME, $connexion) or die(mysql_error());
+    //Construction de la requête en fonction du type de valeur
+switch($_GET['type'])
+{
+    case 'texte':
+    case 'texte-multi':
+        $sql  = 'UPDATE `'.lb_repas;
+        $sql .= '` SET ' . mysql_real_escape_string($_GET['champ']) . '="';
+        $sql .= mysql_real_escape_string($_GET['valeur']) . '" WHERE id_repas=' . intval($_GET['id']);
+        break;
+
+    case 'nombre':
+        $sql  = 'UPDATE `'.lb_repas;
+        $sql .= '` SET ' . mysql_real_escape_string($_GET['champ']) . '=' . intval($_GET['valeur']);
+        $sql .= ' WHERE id_repas=' . intval($_GET['id']);
+        break;
+
+    default:
+        exit;
+}
+    //Exécution de la requête
+    mysql_query($sql) or die(mysql_error());
+
+    mysql_close($connexion);
 ?>
