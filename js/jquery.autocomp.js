@@ -60,7 +60,7 @@ function autocompletpass() {
 	var keyword = $('#nom_pass').val();
 	if (keyword.length >= min_length) {
 		$.ajax({
-			url: 'ajax_refresh_pass.php',
+			url: '../ajax_refresh_pass.php',
 			type: 'POST',
 			data: {keyword:keyword},
 			success:function(data){

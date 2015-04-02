@@ -224,6 +224,7 @@ a {
 }
 
 .content {
+    margin-top: 150px;
     width: 100%;
     font-family: avantgarde;
     font-weight: normal;
