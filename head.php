@@ -36,6 +36,8 @@
       require_once('classes/client.class.inc.php');
       require_once('classes/date.class.inc.php');
       require_once('classes/repas.class.inc.php');
+      require_once('classes/passage.class.inc.php');
+
 
    ?>
    <link rel="icon" type="image/x-icon" href="img/logo.png">
