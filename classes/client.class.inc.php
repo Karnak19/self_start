@@ -86,7 +86,8 @@
 			$solde=$res['solde_cli'];
 			return $solde;
 		}
-
+		
+		// FONCTIONS FIDELISATION SELON LE JOUR
 		public function set_lundi ($select_value)
 		{
 			$SQL_lundichoix= "UPDATE lb_clients SET lun_midi='1' WHERE id_cli='$select_value'";
@@ -117,7 +118,9 @@
 			$SQL_vendredichoix= "UPDATE lb_clients SET ven_midi=1 WHERE id_cli='$select_value' ";
 			mysql_query($SQL_vendredichoix);
 		}
-
+		// FIN FONCTIONS
+		
+		
 		public function set_solde ($solde)
 		{
 			$this->solde_cli=$solde;
@@ -127,6 +130,12 @@
 		{
 			$SQLcrediter="UPDATE lb_clients SET solde_cli='$solde'+'$montant' WHERE id_cli='$client'";
 			mysql_query($SQLcrediter) or die (mysql_error());
+		}
+		
+		public function debiter_solde($solde,$montant_repas,$client)
+		{
+			$SQLdebiter="UPDATE lb_clients SET solde_cli='$solde'-'$montant_repas' WHERE id_cli='$client'";
+			mysql_query($SQLdebiter) or die (mysql_error());
 		}
 		
 		public function afficherclient ()
