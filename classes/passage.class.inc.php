@@ -92,6 +92,10 @@
 				$res_2=mysql_fetch_array ($req_2);
 				$tarif_2=$res_2 ["tarif_repas"];
 			}
+			else
+			{
+				$tarif_2=0;
+			}
 			$tarif=$tarif_1+$tarif_2;
 			return ($tarif);
 		}
