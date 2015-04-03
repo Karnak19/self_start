@@ -26,18 +26,18 @@
                   if ($service == "matin")
                   {
                      echo '<label class="btn btn-default">
-                        <input type="checkbox" autocomplete="off" name="dej" value="3">Petit Déjeuner
+                        <input type="checkbox" autocomplete="off" name="repas[]" value="3">Petit Déjeuner
                   </label>';
                   }
                   else
                   {
                      echo '<label class="btn btn-default">
-                        <input type="checkbox" autocomplete="off" name="complet" value="1">Repas Complet
+                        <input type="checkbox" autocomplete="off" name="repas[]" value="1">Repas Complet
                      </label>';
                   }
                ?>
                <label class="btn btn-default">
-                  <input type="checkbox" autocomplete="off" name="cafe" value="2">Café
+                  <input type="checkbox" autocomplete="off" name="repas[]" value="2">Café
                </label>
 	    </div>
             <input type="submit" class="btn btn-success" value="Passer" name="Passer" >
