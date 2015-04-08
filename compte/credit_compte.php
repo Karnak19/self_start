@@ -13,7 +13,7 @@
 			<ul id="list_nom_cred"></ul>
 		    </div>
 		</div>
-		Montant : <input type="text" name="montant_cred" value="" />
+		<input type="text" name="montant_cred" value="" placeholder="Montant €" />
 		<div class="btn-group" data-toggle="buttons">
 		    <label class="btn btn-default">
 			<input type="radio" autocomplete="off" name="type" value="1">Espèce
