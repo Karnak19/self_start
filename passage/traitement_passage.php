@@ -26,11 +26,11 @@
 		$cafe=0;
 	}
 	$passage=new passage(null, null, null, null, null);
-	$montant=$passage->montant_repas($repas,$cafe);
-	echo ' '.$montant.'€';
+	$montant_repas=$passage->montant_repas($repas,$cafe); //récuperer montant total du repas
+	echo ' '.$montant_repas.'€';
 	$compte=new client ($client, null, null, null, null, null, null, null, null, null, null);
 	$solde= $compte->obtenir_solde($client);
-	
+	$compte->debiter_solde($solde,$montant_repas,$client); //compte débité
 	
 
 	
