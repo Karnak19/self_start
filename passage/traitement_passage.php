@@ -30,6 +30,10 @@
 	echo ' '.$montant_repas.'€';
 	$compte=new client ($client, null, null, null, null, null, null, null, null, null, null);
 	$solde= $compte->obtenir_solde($client);
+	if ($solde<=12)
+	{
+		echo "erreur (solde inférieur à 12 €) ";
+	}
 	$compte->debiter_solde($solde,$montant_repas,$client); //compte débité
 	
 
