@@ -2,7 +2,7 @@
 	include ("../inc/configure.inc.php");
 	require_once ("../classes/client.class.inc.php");
 	
-	$id_array=$_POST ["client"];
+	$id_array=$_POST ["nom_fid"];
 	if (isset ($_POST ["lundi"]))
 	{
 		$lundi=1;

@@ -15,7 +15,7 @@
 				<div class="modal-body">
 					<div class="form-group">
                                                 <div class="input_container">
-                                                   <input type="text" id="nom_fid" onkeyup="autocompletfid()">
+                                                   <input type="text" id="nom_fid" name="nom_fid" onkeyup="autocompletfid()">
                                                    <ul id="list_nom_fid"></ul>
                                                 </div>
 					</div>
