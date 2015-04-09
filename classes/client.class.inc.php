@@ -90,7 +90,7 @@
 		// FONCTIONS FIDELISATION SELON LE JOUR
 		public function set_lundi ($select_value)
 		{
-			$SQL_lundichoix= "UPDATE lb_clients SET lun_midi='1' WHERE id_cli='$select_value'";
+			$SQL_lundichoix= "UPDATE lb_clients SET lun_midi=1 WHERE id_cli='$select_value'";
 			mysql_query($SQL_lundichoix) or die (mysql_error());
 		}
 

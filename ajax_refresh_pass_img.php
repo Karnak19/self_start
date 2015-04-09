@@ -22,6 +22,7 @@ foreach ($list as $rs) {
 
 	// add new option
       echo '<ul><img src="../img/client/'.$id.'.jpg"></ul>';
+      echo '<ul>'.$id.'</ul>';
       echo '<ul>'.$prenom_cli.'</ul>';
       echo'<ul>'.$nom_cli.'</ul>';
       echo '<ul>Solde :'.$solde.' €</ul>';

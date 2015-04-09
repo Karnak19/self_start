@@ -5,7 +5,7 @@
 	
 	if (isset ($_POST['Crediter']))
 	{
-		$client=$_POST['id_client'];
+		$client=$_POST['id_cred'];
 		$type=$_POST['type'];
 		$montant=$_POST['montant_cred'];
 		$date=date('Y-m-d');

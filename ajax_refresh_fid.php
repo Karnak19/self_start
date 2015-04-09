@@ -19,6 +19,6 @@ foreach ($list as $rs) {
 	$id = $rs['id_cli'];
 
 	// add new option
-    echo '<li onclick="set_item_fid(\''.str_replace("'", "\'", $rs['prenom_cli']." ".$rs['nom_cli']).'\')"><img src="img/client/'.$id.'.jpg">'.$prenom_cli.' '.$nom_cli.'</li>';
+    echo '<li onclick="set_item_fid(\''.str_replace("'", "\'", $rs['prenom_cli']." ".$rs['nom_cli']." ".$rs['id_cli']).'\')"><img src="img/client/'.$id.'.jpg">'.$prenom_cli.' '.$nom_cli.'</li>';
 }
 ?>
