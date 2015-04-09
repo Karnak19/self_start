@@ -10,12 +10,12 @@
 				<h4 class="modal-title" id="exampleModalLabel">
 					Repas
 				</h4>
-
 			</div>
 			<div class="modal-body">
 
-			<?php
-
+				<?php
+				$repas=new repas (null, null, null);
+				$repas->ajout_repas ($nom, $tarif);
 		$sql = "SELECT * FROM lb_repas";
 		$req = mysql_query($sql) or die(mysql_error());
 	?>
