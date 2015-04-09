@@ -42,6 +42,11 @@
 	    </div>
             <input type="submit" class="btn btn-success" value="Passer" name="Passer" >
          </div>
+         <div class="divd">
+            <?php
+               echo '<img src="../img/client/'.$id.'.jpg">';
+            ?>
+         </div>
       </div>
 	</form>
    </body>

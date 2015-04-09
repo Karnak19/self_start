@@ -312,15 +312,20 @@ fieldset {
 }
 
 .divd {
+    display: none;
     float: right;
     width: 480px;
     top: 100px;
-    right : 100px;
-    background-color: rgb(200, 200, 200);
-    border: solid 4px;
-    border-radius: 8px;
-    box-shadow: 1px 1px 20px #888888;
+    margin-right: 100px;
+    padding-bottom: 20px;
+    background-color: #FFF;
     text-align: center;
+}
+
+.divd ul {
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 /*  ----------------------

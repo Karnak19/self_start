@@ -68,14 +68,36 @@ function autocompletpass() {
 				$('#list_nom_pass').html(data);
 			}
 		});
+		/*$.ajax({
+			url: '../ajax_refresh_pass_img.php',
+			type: 'POST',
+			data: {keyword:keyword},
+			success:function(data){
+				$('.divd').show();
+				$('.divd').html(data);
+			}
+		});*/
 	} else {
 		$('#list_nom_pass').hide();
+		$('.divd').hide();
 	}
 }
 
 function set_item_pass(item) {
 	// change input value
 	$('#nom_pass').val(item);
+	$('.divd').val(item);
 	// hide proposition list
+	//alert (item);
+	$.ajax({
+			url: '../ajax_refresh_pass_img.php',
+			type: 'POST',
+			data: {keyword:item},
+			success:function(data){
+				$('.divd').show();
+				$('.divd').html(data);
+			}
+		});
 	$('#list_nom_pass').hide();
+	
 }
