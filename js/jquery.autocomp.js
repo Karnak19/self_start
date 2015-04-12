@@ -20,6 +20,8 @@ function autocompletcred() {
 function set_item_cred(item) {
 	// change input value
 	$('#nom_cred').val(item);
+	var id = item.split(" ");
+	$('#id_cred').val(id[2]);
 	// hide proposition list
 	$('#list_nom_cred').hide();
 }
@@ -48,6 +50,8 @@ function autocompletfid() {
 function set_item_fid(item) {
 	// change input value
 	$('#nom_fid').val(item);
+	var id = item.split(" ");
+	$('#id_fid').val(id[2]);
 	// hide proposition list
 	$('#list_nom_fid').hide();
 }
@@ -68,15 +72,6 @@ function autocompletpass() {
 				$('#list_nom_pass').html(data);
 			}
 		});
-		/*$.ajax({
-			url: '../ajax_refresh_pass_img.php',
-			type: 'POST',
-			data: {keyword:keyword},
-			success:function(data){
-				$('.divd').show();
-				$('.divd').html(data);
-			}
-		});*/
 	} else {
 		$('#list_nom_pass').hide();
 		$('.divd').hide();
@@ -87,8 +82,11 @@ function set_item_pass(item) {
 	// change input value
 	$('#nom_pass').val(item);
 	$('.divd').val(item);
+	var id = item.split(" ");
+	$('#id_pass').val(id[2]);
 	// hide proposition list
-	//alert (item);
+	$('#list_nom_pass').hide();
+	//Requête pour afficher le client à droite
 	$.ajax({
 			url: '../ajax_refresh_pass_img.php',
 			type: 'POST',
@@ -98,6 +96,5 @@ function set_item_pass(item) {
 				$('.divd').html(data);
 			}
 		});
-	$('#list_nom_pass').hide();
 	
 }

@@ -62,17 +62,17 @@
 			$heure=date ("H:i");
 			if (($heure>="03:00") && ($heure<"10:00"))
 			{
-				$service="matin";
+				$service="Matin";
 			}
 			else
 			{
 				if (($heure>="10:00") && ($heure<"17:00"))
 				{
-					$service="midi";
+					$service="Midi";
 				}
 				else
 				{
-					$service="soir";
+					$service="Soir";
 				}
 			}
 			return ($service);

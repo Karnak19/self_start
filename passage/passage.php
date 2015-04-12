@@ -19,6 +19,7 @@
             ?>
             <div class="input_container">
 	       <input type="text" id="nom_pass"  name="nom_pass" onkeyup="autocompletpass()">
+                  <input type="hidden" id="id_pass" name="id_pass">
 	       <ul id="list_nom_pass"></ul>
 	    </div>
             <div class="btn-group" data-toggle="buttons">
@@ -27,7 +28,7 @@
                   {
                      echo '<label class="btn btn-default">
                         <input type="checkbox" autocomplete="off" name="repas[]" value="3">Petit Déjeuner
-                  </label>';
+                     </label>';
                   }
                   else
                   {
@@ -43,9 +44,7 @@
             <input type="submit" class="btn btn-success" value="Passer" name="Passer" >
          </div>
          <div class="divd">
-            <?php
-               echo '<img src="../img/client/'.$id.'.jpg">';
-            ?>
+            
          </div>
       </div>
 	</form>

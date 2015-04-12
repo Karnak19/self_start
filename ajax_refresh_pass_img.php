@@ -20,10 +20,15 @@ foreach ($list as $rs) {
 	$id = $rs['id_cli'];
         $solde = $rs['solde_cli'];
 
-	// add new option
-      echo '<ul><img src="../img/client/'.$id.'.jpg"></ul>';
-      echo '<ul>'.$prenom_cli.'</ul>';
-      echo'<ul>'.$nom_cli.'</ul>';
-      echo '<ul>Solde :'.$solde.' €</ul>';
+	// Affichage de la fiche du client.
+	echo '<ul><img src="../img/client/'.$id.'.jpg"></ul>';
+	echo '<ul>'.$id.'</ul>';
+	echo '<ul>'.$prenom_cli.'</ul>';
+	echo'<ul>'.$nom_cli.'</ul>';
+	echo '<ul>Solde :'.$solde.' €</ul>';
+	if ($solde <= 12) //Affichage de la notification si le solde est inférieur à 12€
+	{
+	    echo '<p class="bg-danger">Attention, votre solde est inférieur à 12€ !</p>';
+	}
 }
 ?>
