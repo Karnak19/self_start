@@ -1,17 +1,25 @@
 <?php
-	if (isset ($_POST['Crediter']))
+	if (isset ($_POST['Ajouter']))
 	{
 		include ("../inc/configure.inc.php");
 		require_once ("../classes/repas.class.inc.php");
-	
 
-		$client=$_POST['id_client'];
-		$type=$_POST['type'];
 		$namer=$_POST['namerepas'];
 		$tarifr=$_POST['tarifrepas'];
-		$date=date('Y-m-d');
-		$credit= new repas('',$namer, $tarifr); //objet repas
-		$credit->ajout_repas($namer, $tarifr); //historique du crédit avec date et montant
+
+		$repas= new repas('',null, null); //objet repas
+		$repas->ajout_repas($namer, $tarifr); //historique du crédit avec date et montant
+
+	}
+		if (isset ($_GET['id']))
+	{
+		include ("../inc/configure.inc.php");
+		require_once ("../classes/repas.class.inc.php");
+
+		$id=$_GET['id'];
+
+		$credit= new repas('',null, null); //objet repas
+		$credit->suppr_repas($id); //historique du crédit avec date et montant
 
 	}
 /////////////////////

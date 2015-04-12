@@ -12,22 +12,17 @@
 				</h4>
 			</div>
 			<div class="modal-body">
-<<<<<<< HEAD
-			<?php
 
-=======
 
 				<?php
-				$repas=new repas (null, null, null);
-				$repas->ajout_repas ($nom, $tarif);
->>>>>>> origin/master
-		$sql = "SELECT * FROM lb_repas";
+		$sql = "SELECT * FROM lb_repas WHERE valide='oui'";
 		$req = mysql_query($sql) or die(mysql_error());
 	?>
 				<table id="table-utilisateurs"> 
 						<tr> 
 							<th>Nom</th> 
 							<th>Tarif</th> 
+							<th></th> 
 						</tr> 
 					<?php
 	while ($user = mysql_fetch_assoc($req))
@@ -37,6 +32,7 @@
 			<td id="lib_repas-<?php echo $user['id_repas']; ?>"  class="cellule" ondblclick="inlineMod(<?php echo $user['id_repas']; ?>, this, 'lib_repas', 'texte')"><?php echo $user['lib_repas']; ?></td>
 
 			<td id="tarif_repas-<?php echo $user['id_repas']; ?>"  class="cellule" ondblclick="inlineMod(<?php echo $user['id_repas']; ?>, this, 'tarif_repas', 'nombre')"><?php echo $user['tarif_repas']; ?></td>
+			<td><a href="repas/repas_gerer.php?id=<?php echo $user['id_repas']; ?>"><img src="img/Delete32.png"></a></td>
 </tr>
 	<?php
 	}
