@@ -1,6 +1,21 @@
 <?php
-//On sort en cas de paramètre manquant ou invalide
+	if (isset ($_POST['Crediter']))
+	{
+		include ("../inc/configure.inc.php");
+		require_once ("../classes/repas.class.inc.php");
+	
 
+		$client=$_POST['id_client'];
+		$type=$_POST['type'];
+		$namer=$_POST['namerepas'];
+		$tarifr=$_POST['tarifrepas'];
+		$date=date('Y-m-d');
+		$credit= new repas('',$namer, $tarifr); //objet repas
+		$credit->ajout_repas($namer, $tarifr); //historique du crédit avec date et montant
+
+	}
+/////////////////////
+//On sort en cas de paramètre manquant ou invalide
 if(empty($_GET['id']) or empty($_GET['type']) or empty($_GET['champ']) or empty($_GET['valeur'])
    or !is_numeric($_GET['id'])
    or !in_array(
@@ -34,6 +49,8 @@ switch($_GET['type'])
         $sql .= ' WHERE id_repas=' . intval($_GET['id']);
         break;
 
+
+		
     default:
         exit;
 }

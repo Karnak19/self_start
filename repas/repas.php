@@ -13,7 +13,6 @@
 
 			</div>
 			<div class="modal-body">
-
 			<?php
 
 		$sql = "SELECT * FROM lb_repas";
@@ -37,6 +36,14 @@
 	}
 	?>
 	</table>
+	<br>
+	
+	<!---Ajout d'un repas -->
+	<form method="post" action="repas/repas_gerer.php">
+<input type="text" name="namerepas" value="" placeholder="Nom" required />
+<input type="text" name="tarifrepas" value="" placeholder="Tarif" required />
+<input type="submit" class="btn btn-success" value="Ajouter" name="Ajouter" >
+</form>
 				<div class="clear"></div>
 			</div>
 		</div>
