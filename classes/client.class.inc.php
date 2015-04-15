@@ -147,5 +147,14 @@
 			$client=$id." ".$nom." ".$prenom;
 			return $client;
 		}
+		
+		function isChecked() {
+			if ($exists) {
+				return "checked";
+			} else {
+				return "";
+			}
+		}
+
 	}
 ?>

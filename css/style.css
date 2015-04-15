@@ -303,11 +303,8 @@ fieldset {
     width: 480px;
     top: 100px;
     margin-left: 100px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     background-color: #FFF;
-    border: solid 4px;
-    border-radius: 8px;
-    box-shadow: 1px 1px 20px #888888;
     text-align: center;
 }
 
