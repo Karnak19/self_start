@@ -13,7 +13,7 @@
 			</div>
 			<div class="modal-body">
 				<?php
-				$sql = "SELECT * FROM lb_repas WHERE valide='oui'";
+				$sql = "SELECT * FROM lb_repas WHERE valide_repas='oui'";
 				$req = mysql_query($sql) or die(mysql_error());
 				?>
 				<table id="table-utilisateurs"> 
