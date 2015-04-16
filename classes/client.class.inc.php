@@ -90,31 +90,31 @@
 		// FONCTIONS FIDELISATION SELON LE JOUR
 		public function set_lundi ($select_value)
 		{
-			$SQL_lundichoix= "UPDATE lb_clients SET lun_midi=1 WHERE id_cli='$select_value'";
+			$SQL_lundichoix= "UPDATE lb_clients SET lun_cli=1 WHERE id_cli='$select_value'";
 			mysql_query($SQL_lundichoix) or die (mysql_error());
 		}
 
 		public function set_mardi ($select_value)
 		{
-			$SQL_mardichoix= "UPDATE lb_clients SET mar_midi=1 WHERE id_cli='$select_value' ";
+			$SQL_mardichoix= "UPDATE lb_clients SET mar_cli=1 WHERE id_cli='$select_value' ";
 			mysql_query($SQL_mardichoix);
 		}
 
 		public function set_mercredi ($select_value)
 		{
-			$SQL_mercredichoix= "UPDATE lb_clients SET merc_midi=1 WHERE id_cli='$select_value' ";
+			$SQL_mercredichoix= "UPDATE lb_clients SET merc_cli=1 WHERE id_cli='$select_value' ";
 			mysql_query($SQL_mercredichoix);
 		}
 
 		public function set_jeudi ($select_value)
 		{
-			$SQL_jeudichoix= "UPDATE lb_clients SET jeu_midi=1 WHERE id_cli='$select_value' ";
+			$SQL_jeudichoix= "UPDATE lb_clients SET jeu_cli=1 WHERE id_cli='$select_value' ";
 			mysql_query($SQL_jeudichoix);
 		}
 
 		public function set_vendredi ($select_value)
 		{
-			$SQL_vendredichoix= "UPDATE lb_clients SET ven_midi=1 WHERE id_cli='$select_value' ";
+			$SQL_vendredichoix= "UPDATE lb_clients SET ven_cli=1 WHERE id_cli='$select_value' ";
 			mysql_query($SQL_vendredichoix);
 		}
 		// FIN FONCTIONS
