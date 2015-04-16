@@ -9,11 +9,11 @@
 	    <div class="modal-body" id="cred">
 		<div class="form-group">
 		    <div class="input_container">
-<<<<<<< HEAD
+<!--
 			<input type="text" id="nom_cred" onkeyup="autocompletcred()" required>
-=======
-			<input type="text" id="nom_cred" onkeyup="autocompletcred()" autocomplete="off">
->>>>>>> origin/master
+-->
+			<input type="text" id="nom_cred" onkeyup="autocompletcred()" autocomplete="off" required>
+
 			    <input type="hidden" id="id_cred" name="id_cred">
 			<ul id="list_nom_cred"></ul>
 		    </div>

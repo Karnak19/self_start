@@ -15,11 +15,11 @@
 				<div class="modal-body">
 					<div class="form-group">
                                                 <div class="input_container">
-<<<<<<< HEAD
+<!--
                                                    <input type="text" id="nom_fid" name="nom_fid" onkeyup="autocompletfid()" required>
-=======
-                                                   <input type="text" id="nom_fid" name="nom_fid" onkeyup="autocompletfid()" autocomplete="off">
->>>>>>> origin/master
+-->
+                                                   <input type="text" id="nom_fid" name="nom_fid" onkeyup="autocompletfid()" autocomplete="off" required>
+
                                                    <input type="hidden" id="id_fid" name="id_fid">
                                                    <ul id="list_nom_fid"></ul>
                                                 </div>
