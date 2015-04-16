@@ -10,6 +10,7 @@
 		$repas= new repas('',null, null); //objet repas
 		$repas->ajout_repas($namer, $tarifr); //historique du crédit avec date et montant
 
+		header ("Location: ../accueil.php");
 	}
 		if (isset ($_GET['id']))
 	{
@@ -21,6 +22,7 @@
 		$credit= new repas('',null, null); //objet repas
 		$credit->suppr_repas($id); //historique du crédit avec date et montant
 
+		header ("Location: ../accueil.php");
 	}
 /////////////////////
 //On sort en cas de paramètre manquant ou invalide

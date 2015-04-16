@@ -15,5 +15,6 @@
 		$solde= $client2->obtenir_solde($client);
 		$client2->crediter_solde($solde,$montant,$client); //mise à jour du solde du client
 
+		header ("Location: ../accueil.php");
 	}
 ?>

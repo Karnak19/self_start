@@ -9,12 +9,12 @@
 	    <div class="modal-body" id="cred">
 		<div class="form-group">
 		    <div class="input_container">
-			<input type="text" id="nom_cred" onkeyup="autocompletcred()">
+			<input type="text" id="nom_cred" onkeyup="autocompletcred()" required>
 			    <input type="hidden" id="id_cred" name="id_cred">
 			<ul id="list_nom_cred"></ul>
 		    </div>
 		</div>
-		<input type="text" name="montant_cred" value="" placeholder="Montant €" />
+		<input type="text" name="montant_cred" value="" placeholder="Montant €" required />
 		<div class="btn-group" data-toggle="buttons">
 		    <label class="btn btn-default">
 			<input type="radio" autocomplete="off" name="type" value="1">Espèce
