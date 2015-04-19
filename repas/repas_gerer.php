@@ -1,4 +1,25 @@
 <?php
+			if($_GET['idrepas'])	
+			{
+			include ("../inc/configure.inc.php");
+			$idrepas=$_GET['idrepas'];
+			$valrepas= $_GET['valrepas'];
+			$servrepas=$_GET['servrepas'];
+			
+				if($valrepas == '0')
+				{
+						$SQLgetnon="UPDATE lb_repas SET $servrepas='1'
+							WHERE id_repas='$idrepas' ";
+				$verifgetnon = mysql_query($SQLgetnon)or die(mysql_error());
+				}
+				if($valrepas == '1')
+				{
+						$SQLgetoui="UPDATE lb_repas SET $servrepas='0'
+							WHERE id_repas='$idrepas' ";
+				$verifgetoui = mysql_query($SQLgetoui)or die(mysql_error());
+				}
+				header ("Location: ../accueil.php");
+			}
 	if (isset ($_POST['Ajouter']))
 	{
 		include ("../inc/configure.inc.php");
@@ -68,4 +89,5 @@ switch($_GET['type'])
     mysql_query($sql) or die(mysql_error());
 
     mysql_close($connexion);
-?>
+
+	?>
