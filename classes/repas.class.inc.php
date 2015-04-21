@@ -45,7 +45,7 @@
 			$res=mysql_fetch_array ($req);
 			$nom=$res ["lib_repas"];
 			return ($nom);
-		}
+		} 
 		
 		public function tarif_repas ($id)
 		{
@@ -55,13 +55,24 @@
 			$tarif=$res ["tarif_repas"];
 			return ($tarif);
 		}
-		
-		public function ajout_repas ($lib, $tarif)
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		public function ajout_repas_matin ($lib, $tarif)
 		{
-			$SQL="INSERT INTO lb_repas (id_repas, lib_repas, tarif_repas) VALUES ('', '$lib', '$tarif')";
+			$SQL="INSERT INTO lb_repas (id_repas, lib_repas, tarif_repas,service_repas) VALUES ('', '$lib', '$tarif','matin')";
+			mysql_query ($SQL) or die (mysql_error ());
+			
+		}
+				public function ajout_repas_midi ($lib, $tarif)
+		{
+			$SQL="INSERT INTO lb_repas (id_repas, lib_repas, tarif_repas,service_repas) VALUES ('', '$lib', '$tarif','midi')";
 			mysql_query ($SQL) or die (mysql_error ());
 		}
-
+				public function ajout_repas_soir ($lib, $tarif)
+		{
+			$SQL="INSERT INTO lb_repas (id_repas, lib_repas, tarif_repas,service_repas) VALUES ('', '$lib', '$tarif','soir')";
+			mysql_query ($SQL) or die (mysql_error ());
+		}
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		public function mod_repas ($id, $prix)
 		{
 			$SQL="UPDATE lb_repas SET tarif_repas='$prix' WHERE id_repas='$id'";

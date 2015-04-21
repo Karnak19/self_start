@@ -19,11 +19,13 @@
 				</h4>
 			</div>
 			<div class="modal-body">
+
 							<!--- Tableau -->
 			<?php
 				$sqlsoir = "SELECT * FROM lb_repas WHERE valide_repas='oui' ";
 				$reqsoir = mysql_query($sqlsoir) or die(mysql_error());
 			?>		
+
 				<table id="table-utilisateurs"> 
 						<tr> 
 							<th>Nom</th> 
