@@ -25,7 +25,7 @@ foreach ($list as $rs) {
 	echo '<ul>'.$id.'</ul>';
 	echo '<ul>'.$prenom_cli.'</ul>';
 	echo'<ul>'.$nom_cli.'</ul>';
-	echo '<ul>Solde :'.$solde.' €</ul>';
+	echo '<ul>Solde : '.$solde.' €</ul>';
 	if ($solde <= 12) //Affichage de la notification si le solde est inférieur à 12€
 	{
 	    echo '<p class="bg-danger">Attention, votre solde est inférieur à 12€ !</p>';
