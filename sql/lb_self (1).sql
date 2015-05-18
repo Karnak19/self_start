@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Jeu 16 Avril 2015 à 10:29
+-- Généré le :  Lun 18 Mai 2015 à 14:44
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -41,6 +41,14 @@ CREATE TABLE IF NOT EXISTS `lb_clients` (
   PRIMARY KEY (`id_cli`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Contenu de la table `lb_clients`
+--
+
+INSERT INTO `lb_clients` (`id_cli`, `nom_cli`, `prenom_cli`, `reg_cli`, `classe_cli`, `lun_cli`, `mar_cli`, `merc_cli`, `jeu_cli`, `ven_cli`, `solde_cli`) VALUES
+(411001, 'CHAUD', 'Fe', 'Interne', 'TS2SIO', 1, 1, 1, 1, 1, 30),
+(411002, 'IZI', 'booba', 'etudiant', 'TS2SIO', 0, 0, 0, 0, 0, 250);
+
 -- --------------------------------------------------------
 
 --
@@ -73,13 +81,21 @@ INSERT INTO `lb_connect` (`id_connect`, `nom_connect`, `prenom_connect`, `type_c
 --
 
 CREATE TABLE IF NOT EXISTS `lb_credit` (
-  `id_cred` int(2) NOT NULL,
+  `id_cred` int(2) NOT NULL AUTO_INCREMENT,
   `date_cred` date NOT NULL,
   `montant_cred` int(5) NOT NULL,
   `type_cred` int(1) NOT NULL,
   `id_cli` int(2) NOT NULL,
   PRIMARY KEY (`id_cred`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+
+--
+-- Contenu de la table `lb_credit`
+--
+
+INSERT INTO `lb_credit` (`id_cred`, `date_cred`, `montant_cred`, `type_cred`, `id_cli`) VALUES
+(1, '2015-04-16', 15, 1, 411001),
+(2, '2015-04-16', 150, 2, 411002);
 
 -- --------------------------------------------------------
 
