@@ -56,9 +56,10 @@
 			return ($tarif);
 		}
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-		public function ajout_repas($lib, $tarif,$service)
+		
+		public function ajout_repas($lib,$tarif)
 		{
-			$SQL="INSERT INTO lb_repas (id_repas, lib_repas, tarif_repas,serv_repas,valide_repas) VALUES ('', '$lib', '$tarif','$service',1)";
+			$SQL="INSERT INTO lb_repas (id_repas, lib_repas, tarif_repas,valide_repas) VALUES ('', '$lib', '$tarif','oui')";
 			mysql_query ($SQL) or die (mysql_error ());
 			
 		}

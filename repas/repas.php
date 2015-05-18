@@ -30,9 +30,6 @@
 						<tr> 
 							<th>Nom</th> 
 							<th>Tarif</th> 
-							<th>Matin</th> 
-							<th>Midi</th> 
-							<th>Soir</th> 
 							<th width="50px"></th> 
 						</tr> 
 					<?php
@@ -42,9 +39,7 @@
 						<tr>
 							<td id="lib_repas-<?php echo $soir['id_repas']; ?>"  class="cellule" ondblclick="inlineMod(<?php echo $soir['id_repas']; ?>, this, 'lib_repas', 'texte')"><?php echo $soir['lib_repas']; ?></td>
 							<td id="tarif_repas-<?php echo $soir['id_repas']; ?>"  class="cellule" ondblclick="inlineMod(<?php echo $soir['id_repas']; ?>, this, 'tarif_repas', 'nombre')"><?php echo $soir['tarif_repas']; ?></td>
-							<td><input type="checkbox" style="width:40px"<?php if ($soir['matin_repas'] =='1' ){ ?> checked="checked" <?php } ?>   value="<?php echo $soir['id_repas']?>" onclick="openvalider('<?php echo $soir['id_repas']?>','<?php echo $soir['matin_repas'] ?>','matin_repas')" /></td>
-							<td><input type="checkbox" style="width:40px"<?php if ($soir['midi_repas'] =='1' ){ ?> checked="checked" <?php } ?>  value="<?php echo $soir['id_repas']?>" onclick="openvalider('<?php echo $soir['id_repas']?>','<?php echo $soir['midi_repas'] ?>','midi_repas')" /></td>
-							<td><input type="checkbox" style="width:40px"<?php if ($soir['soir_repas'] =='1' ){ ?> checked="checked" <?php } ?>   value="<?php echo $soir['id_repas']?>" onclick="openvalider('<?php echo $soir['id_repas']?>','<?php echo $soir['soir_repas'] ?>','soir_repas')" /></td>
+							
 							<td><a href="repas/repas_gerer.php?id=<?php echo $soir['id_repas']; ?>"><img src="img/Delete32.png"></a></td>
 						</tr>
 						<?php
@@ -56,18 +51,6 @@
 				<form method="post" action="repas/repas_gerer.php">
 					<input type="text" name="namerepas" value="" placeholder="Nom" required />
 					<input type="text" name="tarifrepas" value="" placeholder="Tarif" required />
-						<div class="btn-group" data-toggle="buttons">
-						<label class="btn btn-default">
-							<input type="checkbox" autocomplete="off" name="service" value="1"> Matin
-						</label>
-						<label class="btn btn-default">
-							<input type="checkbox" autocomplete="off" name="service" value="2"> Midi
-						</label>
-						<label class="btn btn-default">
-							<input type="checkbox" autocomplete="off" name="service" value="3"> Soir
-					   </label>
-
-					</div>
 					<input type="submit" class="btn btn-success" value="Ajouter" name="Ajouter" >
 				</form>
 				<div class="clear"></div>

@@ -27,10 +27,9 @@
 
 		$namer=$_POST['namerepas'];
 		$tarifr=$_POST['tarifrepas'];
-		$service=$_POST['service'];
 
 		$repas= new repas('',null, null); //objet repas
-		$repas->ajout_repas($namer, $tarifr,$service); //ajout repas avec son tarif
+		$repas->ajout_repas($namer, $tarifr); //ajout repas avec son tarif
 
 		header ("Location: ../accueil.php");
 	}
@@ -65,7 +64,8 @@ if(empty($_GET['id']) or empty($_GET['type']) or empty($_GET['champ']) or empty(
 	$DB_NAME="lb_self";
     $connexion = mysql_connect($DB_HOST, $DB_USER, $DB_PASSWORD) or die(mysql_error());
     mysql_select_db($DB_NAME, $connexion) or die(mysql_error());
-    //Construction de la requête en fonction du type de valeur
+    
+	//Construction de la requête en fonction du type de valeur
 switch($_GET['type'])
 {
     case 'texte':
