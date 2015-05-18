@@ -56,22 +56,13 @@
 			return ($tarif);
 		}
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-		public function ajout_repas_matin ($lib, $tarif)
+		public function ajout_repas($lib, $tarif,$service)
 		{
-			$SQL="INSERT INTO lb_repas (id_repas, lib_repas, tarif_repas,service_repas) VALUES ('', '$lib', '$tarif','matin')";
+			$SQL="INSERT INTO lb_repas (id_repas, lib_repas, tarif_repas,serv_repas,valide_repas) VALUES ('', '$lib', '$tarif','$service',1)";
 			mysql_query ($SQL) or die (mysql_error ());
 			
 		}
-				public function ajout_repas_midi ($lib, $tarif)
-		{
-			$SQL="INSERT INTO lb_repas (id_repas, lib_repas, tarif_repas,service_repas) VALUES ('', '$lib', '$tarif','midi')";
-			mysql_query ($SQL) or die (mysql_error ());
-		}
-				public function ajout_repas_soir ($lib, $tarif)
-		{
-			$SQL="INSERT INTO lb_repas (id_repas, lib_repas, tarif_repas,service_repas) VALUES ('', '$lib', '$tarif','soir')";
-			mysql_query ($SQL) or die (mysql_error ());
-		}
+			
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		public function mod_repas ($id, $prix)
 		{

@@ -1,5 +1,5 @@
 <?php
-			if($_GET['idrepas'])	
+			if(isset($_GET['idrepas']))
 			{
 			include ("../inc/configure.inc.php");
 			$idrepas=$_GET['idrepas'];
@@ -27,9 +27,10 @@
 
 		$namer=$_POST['namerepas'];
 		$tarifr=$_POST['tarifrepas'];
+		$service=$_POST['service'];
 
 		$repas= new repas('',null, null); //objet repas
-		$repas->ajout_repas($namer, $tarifr); //historique du crédit avec date et montant
+		$repas->ajout_repas($namer, $tarifr,$service); //ajout repas avec son tarif
 
 		header ("Location: ../accueil.php");
 	}

@@ -58,13 +58,13 @@
 					<input type="text" name="tarifrepas" value="" placeholder="Tarif" required />
 						<div class="btn-group" data-toggle="buttons">
 						<label class="btn btn-default">
-							<input type="checkbox" autocomplete="off" name="Matin"> Matin
+							<input type="checkbox" autocomplete="off" name="service" value="1"> Matin
 						</label>
 						<label class="btn btn-default">
-							<input type="checkbox" autocomplete="off" name="Midi"> Midi
+							<input type="checkbox" autocomplete="off" name="service" value="2"> Midi
 						</label>
 						<label class="btn btn-default">
-							<input type="checkbox" autocomplete="off" name="Soir"> Soir
+							<input type="checkbox" autocomplete="off" name="service" value="3"> Soir
 					   </label>
 
 					</div>
