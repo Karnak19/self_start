@@ -32,15 +32,20 @@
 	$montant_repas=$passage->montant_repas($repas,$cafe); //récuperer montant total du repas
 	$compte=new client ($client, null, null, null, null, null, null, null, null, null, null);
 	$solde= $compte->obtenir_solde($client);
-	/*if ($solde<=12)
-	{
-		echo "erreur (solde inférieur à 12 €) ";
-	}*/
 	
 	$compte->debiter_solde($solde,$montant_repas,$client); //compte débité
 	
-
-	header("passage.php");
+	/*$service = new passage(null, null, null, null, null);
+	$service->service();
+	echo $service;*/
+	
+	$date=date ("Y-m-d");
+	$histo_pass = "INSERT INTO lb_passage(id_passage, date_passage, serv_passage, mont_repas, id_repas, id_client)
+		VALUES ('','$date', '', '$montant_repas', '', '$client') ";
+	$req_histo=mysql_query ($histo_pass) or die (mysql_error ());
+	$res_histo=mysql_fetch_array ($req_histo);
+	
+	//header("passage.php");
 	
 	
 	
