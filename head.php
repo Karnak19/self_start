@@ -7,7 +7,12 @@
    <script type="text/javascript" src="<?php echo $link; ?>js/jquery.autocomp.js"></script>
    
 
-
+   <!-- Include Date Picker -->
+   <script>
+      $(function() {
+         $( "#datepicker" ).datepicker();
+      });
+   </script>
       
    <!-- Include Bootstrap -->
    <link rel="stylesheet" href="<?php echo $link; ?>css/bootstrap.min.css">
