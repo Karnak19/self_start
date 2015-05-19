@@ -43,7 +43,7 @@
 		VALUES ('','$date', '$service', '$montant_repas','$client') ";
 	$req_histo=mysql_query ($SQLhisto_pass) or die (mysql_error ());
 	
-	//header("passage.php");
+	header("passage.php");
 	
 	
 	
