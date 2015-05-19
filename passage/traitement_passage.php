@@ -39,11 +39,11 @@
 	$service=$service->service();
 
 	$date=date ("Y-m-d");
-	$SQLhisto_pass = "INSERT INTO lb_passage(id_passage, date_passage, serv_passage, mont_repas, id_repas, id_client)
-		VALUES ('','$date', '$service', '$montant_repas', '', '$client') ";
+	$SQLhisto_pass = "INSERT INTO lb_passage(id_passage, date_passage, serv_passage, mont_repas, id_client)
+		VALUES ('','$date', '$service', '$montant_repas','$client') ";
 	$req_histo=mysql_query ($SQLhisto_pass) or die (mysql_error ());
 	
-	//header("passage.php");
+	header("passage.php");
 	
 	
 	
