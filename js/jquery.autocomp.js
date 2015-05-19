@@ -24,6 +24,16 @@ function set_item_cred(item) {
 	$('#id_cred').val(id[2]);
 	// hide proposition list
 	$('#list_nom_cred').hide();
+	//Requête pour afficher le client à droite
+	$.ajax({
+			url: './ajax_refresh/ajax_refresh_cred_img.php',
+			type: 'POST',
+			data: {keyword:item},
+			success:function(data){
+				$('#cred_img').show();
+				$('#cred_img').html(data);
+			}
+		});
 }
 
 //___________________________________________________________________________________________________________________________
@@ -54,6 +64,16 @@ function set_item_fid(item) {
 	$('#id_fid').val(id[2]);
 	// hide proposition list
 	$('#list_nom_fid').hide();
+	//Requête pour afficher le client à droite
+	$.ajax({
+			url: './ajax_refresh/ajax_refresh_fid_img.php',
+			type: 'POST',
+			data: {keyword:item},
+			success:function(data){
+				$('#fid_img').show();
+				$('#fid_img').html(data);
+			}
+		});
 }
 
 //___________________________________________________________________________________________________________________________

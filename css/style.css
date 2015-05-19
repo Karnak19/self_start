@@ -325,6 +325,22 @@ fieldset {
     margin-bottom: 2px;
 }
 
+#fid_img {
+    float: left;
+    width : 300px;
+}
+#fid_img img {
+    float: left;
+}
+
+#cred_img {
+    float: left;
+    width : 300px;
+}
+#cred_img img {
+    float: left;
+}
+
 /*  ----------------------
  *  --------Tableau-------
  *  ---------------------*/
