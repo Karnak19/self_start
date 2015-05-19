@@ -28,6 +28,11 @@
 				<input type="radio" autocomplete="off" name="type" value="2">Chèque
 				</label>
 			</div>
+			<div class="clear"></div>
+			<div id="cred_img">
+			    <!-- Affiche les données du client sélectionné -->
+                        </div>
+                        <div class="clear"></div>
 	    </div>
 	    <div class="modal-footer">
 		<button type="button" class="btn btn-warning" data-dismiss="modal">

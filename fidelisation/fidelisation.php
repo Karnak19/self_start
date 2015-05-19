@@ -40,7 +40,12 @@
 					   <label class="btn btn-default">
 							<input type="checkbox" autocomplete="off" name="vendredi"> Vendredi
 					   </label>
-					</div>
+                                        </div>
+                                       <div class="clear"></div>
+                                        <div id="fid_img">
+                                          <!-- Affiche les données du client sélectionné -->
+                                        </div>
+                                        <div class="clear"></div>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-warning" data-dismiss="modal">
