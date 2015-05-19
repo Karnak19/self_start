@@ -23,7 +23,7 @@
 					<?php
 						}
 					?>
-					<a href="stats/stats.php"><img src="img/statistics8.png"></a>
+					<a href="stats/stats.php" target="_blank"><img src="img/statistics8.png"></a>
 					<a href="passage/passage.php" target="_blank"><img src="img/shopping206.png"></a>
 					<!--<a type="button" data-toggle="modal" data-target="#passa"><img src="img/shopping206.png"></a>-->
 					<a type="button" data-toggle="modal" data-target="#fidel"><img src="img/calendar147.png"></a>
