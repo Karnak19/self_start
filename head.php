@@ -10,7 +10,7 @@
    <!-- Include Date Picker -->
    <script>
       $(function() {
-         $( "#datepicker" ).datepicker();
+         $( ".datepicker" ).datepicker();
       });
    </script>
       

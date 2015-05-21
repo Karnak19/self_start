@@ -1,7 +1,11 @@
-.content ul {
-   text-align: left;
+.divs {
+   width: 480px;
+   margin: 50px;
+   background-color: #FFF;
+   border: dotted 2px;
+   text-align: center;
 }
 
-.content img {
+.divs img {
    height: 100px;
 }

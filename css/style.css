@@ -89,6 +89,11 @@ a {
     width: 170px;
 }
 
+.ui-widget-header {
+    background: #3DB2E1;
+    border: 1px solid #000;
+}
+
 
 /*  ----------------------
  *  --------Login--------
@@ -325,6 +330,26 @@ fieldset {
     margin-bottom: 2px;
 }
 
+.divs {
+   width: 400px;
+   margin: 70px;
+   padding: 10px;
+   background-color: #FFF;
+   border: solid 2px;
+   text-align: center;
+   display: none;
+}
+
+.divs ul {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.divs img {
+    float: left;
+   height: 100px;
+}
+
 #fid_img {
     float: left;
     width : 300px;
@@ -356,7 +381,7 @@ th {
     font-family: avantgarde;
     border: thin solid rgb(0, 0, 0);
     padding: 5px;
-    background-color: #77d42a;
+    background-color: #7f7f7f;
 }
 
 td {
