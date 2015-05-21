@@ -21,7 +21,7 @@ function Header()
 $pdf=new PDF();
 $pdf->AddPage();
 //Premier tableau : imprime toutes les colonnes de la requête
-$SQLrecherche = "SELECT CONCAT(nom_cli,' ',prenom_cli) AS Nom,solde_cli AS Solde  FROM lb_clients WHERE solde_cli<=12
+$SQLrecherche = "SELECT CONCAT(nom_cli,' ',prenom_cli) AS Nom,solde_cli AS Solde  FROM lb_clients WHERE solde_cli<=-12
  ";
 
 
