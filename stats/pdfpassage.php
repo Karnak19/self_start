@@ -2,7 +2,7 @@
  include('../mysql_table.php');
   include ('../inc/configure.inc.php');
 
-
+//$date=$_POST['date']
 
 class PDF extends PDF_MySQL_Table
 {
@@ -21,7 +21,8 @@ function Header()
 $pdf=new PDF();
 $pdf->AddPage();
 //Premier tableau : imprime toutes les colonnes de la requête
-$SQLrecherche = "SELECT id_cli AS code,nom_cli AS Nom ,prenom_cli AS Prenom FROM lb_clients 
+$SQLrecherche = "SELECT id_cli AS code,nom_cli AS Nom ,prenom_cli AS Prenom FROM lb_clients,lb_passage
+					WHERE date_passage='$date';
  ";
 
 

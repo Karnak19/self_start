@@ -145,6 +145,7 @@ class PDF extends PDF_MySQL_Table
 
 	$pdf=new PDF();
 	$pdf->AddPage();
+	
 	//Premier tableau : imprime toutes les colonnes de la requête
 
 	$pdf->Table($SQL_1);

@@ -14,7 +14,7 @@
       <div class="content">
          <div id='cssmenu'>
             <ul>
-               <li id="solde"><a href='#'>Soldes débitteurs</a></li>
+               <li id="solde"><a href='#'>Soldes débiteurs</a></li>
                <li id="pass"><a href='#'>Passages</a></li>
                <li id="abs"><a href='#'>Absences</a></li>
                <li id="cred"><a href='#'>Crédits de comptes</a></li>
@@ -24,15 +24,15 @@
             <a href='pdfsoldes.php'><img src="../img/pdf.png"> Soldes débiteurs</a>
          </div>
          <div class="divg" id="aff_pass" style="display: none;">
-            <img src="../img/pdf.png"> Passages
-            <ul><input type="text" id="datepicker"></ul>
+            <a href='pdfpassage.php'><img src="../img/pdf.png"> Passages</a>
+            <ul><input type="text" id="datepicker" name="date"></ul>
          </div>
          <div class="divg" id="aff_abs" style="display: none;">
-            <img src="../img/pdf.png"> Absences
+             <a href='pdfabsents.php'><img src="../img/pdf.png"> Absences</a>
             <ul><input type="text" id="datepicker"></ul>
          </div>
          <div class="divg" id="aff_cred" style="display: none;">
-            <img src="../img/pdf.png"> Crédits de comptes
+             <a href='pdfcredit.php'><img src="../img/pdf.png"> Crédits de comptes</a>
             <ul><input type="text" id="datepicker"></ul>
          </div>
          <!--<table>
