@@ -21,7 +21,7 @@
             </ul>
          </div>
          <div class="divg" id="aff_sold" style="display: none;">
-            <img src="../img/pdf.png"> Soldes débitteurs
+            <a href='pdfsoldes.php'><img src="../img/pdf.png"> Soldes débiteurs</a>
          </div>
          <div class="divg" id="aff_pass" style="display: none;">
             <img src="../img/pdf.png"> Passages
