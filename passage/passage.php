@@ -18,11 +18,7 @@
                echo "<br>Service : ". $service->service();
             ?>
             <div class="input_container">
-<!--
-	       <input type="text" id="nom_pass"  name="nom_pass" onkeyup="autocompletpass()" required>
--->
 	       <input type="text" id="nom_pass"  name="nom_pass" onkeyup="autocompletpass()" autocomplete="off" required>
-
                   <input type="hidden" id="id_pass" name="id_pass">
 	       <ul id="list_nom_pass"></ul>
 	    </div>
