@@ -331,7 +331,7 @@ fieldset {
 }
 
 .divs {
-   width: 400px;
+   width: 600px;
    margin: 70px;
    padding: 10px;
    background-color: #FFF;
@@ -347,7 +347,7 @@ fieldset {
 
 .divs img {
     float: left;
-   height: 100px;
+   height: 150px;
 }
 
 #fid_img {
