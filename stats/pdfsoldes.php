@@ -10,7 +10,7 @@ function Header()
 {
     //Titre
     $this->SetFont('Arial','',18);
-    $this->Cell(0,6,'Liste des credits ajoutes',0,1,'C');
+    $this->Cell(0,6,'Liste des soldes debiteurs',0,1,'C');
     $this->Ln(20);
     //Imprime l'en-tête du tableau si nécessaire
     parent::Header();
