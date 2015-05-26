@@ -21,33 +21,40 @@
                <li id="hideall"><a href='#'>Tout cacher</a></li>
             </ul>
          </div>
-         <div class="divs" id="aff_sold">
+         
+		 <!-- Partie SOLDES -->
+		 <div class="divs" id="aff_sold">
             Soldes débiteurs
             <a href='pdfsoldes.php' target="_blank"><img src="../img/pdf.png"></a>
             <div class="clear"></div>
          </div>
-         <div class="divs" id="aff_pass">
-            <form method="post" action="">
+         
+		 <!-- Partie PASSAGES -->
+		 <div class="divs" id="aff_pass">
+            <form method="post" action="pdfpassage.php">
             Passages
-            <a href='pdfpassage.php' target="_blank"><img src="../img/pdf.png"></a>
+            <a  target="_blank"><img src="../img/pdf.png"></a>
             <ul><input type="text" class="datepicker" name="datepass"></ul>
             <ul><div class="btn-group" data-toggle="buttons">
 	       <label class="btn btn-default">
-		  <input type="radio" autocomplete="off" name="matin"> Matin
+		  <input type="radio" autocomplete="off" name="service" value="Matin"> Matin
 	       </label>
                <label class="btn btn-default">
-		  <input type="radio" autocomplete="off" name="midi"> Midi
+		  <input type="radio" autocomplete="off" name="service" value="Midi"> Midi
 	       </label>
                <label class="btn btn-default">
-                  <input type="radio" autocomplete="off" name="soir"> Soir
+                  <input type="radio" autocomplete="off" name="service" value="Soir"> Soir
                </label>
             </div></ul>
+			<ul><input type="submit" value="envoyer" name="envoyer"></ul>
             <div class="clear"></div>
             </form>
          </div>
-         <div class="divs" id="aff_abs">
+         
+		 <!-- Partie ABSENCES -->
+		 <div class="divs" id="aff_abs">
             Absences
-            <a href='pdfabsents.php' target="_blank"><img src="../img/pdf.png"></a>
+            <a href='' target="_blank"><img src="../img/pdf.png"></a>
             <ul><input type="text" class="datepicker" name="dateabs"></ul>
             <ul><div class="btn-group" data-toggle="buttons">
 	       <label class="btn btn-default">
@@ -59,7 +66,9 @@
             </div></ul>
             <div class="clear"></div>
          </div>
-         <div class="divs" id="aff_cred">
+         
+		 <!-- Partie CREDITS -->
+		 <div class="divs" id="aff_cred">
             Crédits de comptes
             <a href='pdfcredit.php' target="_blank"><img src="../img/pdf.png"></a>
             <ul><input type="text" class="datepicker" name="datedcred"></ul>
