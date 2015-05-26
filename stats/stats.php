@@ -55,21 +55,35 @@
          
 	 <!-- Partie ABSENCES -->
 	 <div class="divs" id="aff_abs_fidel">
+		<form method="post" action="pdffidelises_absents.php">
             Absences fidélisés
             <img src="../img/pdf.png">
             <ul><input type="text" class="datepicker" name="dateabs_fidel"></ul>
             <ul></ul>
             <ul><input type="submit" value="Télécharger" name="envoyer"></ul>
             <div class="clear"></div>
+		</form>
          </div>
          
          <div class="divs" id="aff_abs">
+		 <form method="post" action="pdfabsents.php">
             Absences
             <img src="../img/pdf.png">
             <ul><input type="text" class="datepicker" name="dateabs"></ul>
-            <ul></ul>
+            <ul><div class="btn-group" data-toggle="buttons">
+	       <label class="btn btn-default">
+		  <input type="radio" autocomplete="off" name="service" value="Matin"> Matin
+	       </label>
+               <label class="btn btn-default">
+		  <input type="radio" autocomplete="off" name="service" value="Midi"> Midi
+	       </label>
+               <label class="btn btn-default">
+                  <input type="radio" autocomplete="off" name="service" value="Soir"> Soir
+               </label>
+            </div></ul>
             <ul><input type="submit" value="Télécharger" name="envoyer"></ul>
             <div class="clear"></div>
+		</form>
          </div>
          
 	 <!-- Partie CREDITS -->
