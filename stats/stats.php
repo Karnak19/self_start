@@ -69,12 +69,16 @@
          
 		 <!-- Partie CREDITS -->
 		 <div class="divs" id="aff_cred">
+		 <form method="post" action="pdfcredit.php">
             Crédits de comptes
-            <a href='pdfcredit.php' target="_blank"><img src="../img/pdf.png"></a>
+            <a target="_blank"><img src="../img/pdf.png"></a>
             <ul><input type="text" class="datepicker" name="datedcred"></ul>
             <ul><input type="text" class="datepicker" name="datefcred"></ul>
             <div class="clear"></div>
+			<ul><input type="submit" value="envoyer" name="envoyer"></ul>
+		</form>
          </div>
+		 
       </div>
       
       <!-- Toggle (Hide/show) -->
