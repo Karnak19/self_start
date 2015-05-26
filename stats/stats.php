@@ -27,21 +27,43 @@
             <div class="clear"></div>
          </div>
          <div class="divs" id="aff_pass">
+            <form method="post" action="">
             Passages
             <a href='pdfpassage.php' target="_blank"><img src="../img/pdf.png"></a>
             <ul><input type="text" class="datepicker" name="datepass"></ul>
+            <ul><div class="btn-group" data-toggle="buttons">
+	       <label class="btn btn-default">
+		  <input type="radio" autocomplete="off" name="matin"> Matin
+	       </label>
+               <label class="btn btn-default">
+		  <input type="radio" autocomplete="off" name="midi"> Midi
+	       </label>
+               <label class="btn btn-default">
+                  <input type="radio" autocomplete="off" name="soir"> Soir
+               </label>
+            </div></ul>
             <div class="clear"></div>
+            </form>
          </div>
          <div class="divs" id="aff_abs">
             Absences
             <a href='pdfabsents.php' target="_blank"><img src="../img/pdf.png"></a>
             <ul><input type="text" class="datepicker" name="dateabs"></ul>
+            <ul><div class="btn-group" data-toggle="buttons">
+	       <label class="btn btn-default">
+		  <input type="radio" autocomplete="off" name="regime"> Régime
+	       </label>
+               <label class="btn btn-default">
+		  <input type="radio" autocomplete="off" name="fidelise"> Fidélisé
+	       </label>
+            </div></ul>
             <div class="clear"></div>
          </div>
          <div class="divs" id="aff_cred">
             Crédits de comptes
             <a href='pdfcredit.php' target="_blank"><img src="../img/pdf.png"></a>
-            <ul><input type="text" class="datepicker" name="datecred"></ul>
+            <ul><input type="text" class="datepicker" name="datedcred"></ul>
+            <ul><input type="text" class="datepicker" name="datefcred"></ul>
             <div class="clear"></div>
          </div>
       </div>
@@ -50,27 +72,27 @@
         <script>
                 $("#solde").click(function(){
                     $("#aff_sold").toggle(300);
-                    $("#aff_pass").hide();
-                    $("#aff_abs").hide();
-                    $("#aff_cred").hide();
+                    $("#aff_pass").hide(600);
+                    $("#aff_abs").hide(600);
+                    $("#aff_cred").hide(600);
                 });
                 $("#pass").click(function(){
                     $("#aff_pass").toggle(300);
-                    $("#aff_sold").hide();
-                    $("#aff_abs").hide();
-                    $("#aff_cred").hide();
+                    $("#aff_sold").hide(600);
+                    $("#aff_abs").hide(600);
+                    $("#aff_cred").hide(600);
                 });
                 $("#abs").click(function(){
                     $("#aff_abs").toggle(300);
-                    $("#aff_sold").hide();
-                    $("#aff_pass").hide();
-                    $("#aff_cred").hide();
+                    $("#aff_sold").hide(600);
+                    $("#aff_pass").hide(600);
+                    $("#aff_cred").hide(600);
                 });
                 $("#cred").click(function(){
                     $("#aff_cred").toggle(300);
-                    $("#aff_sold").hide();
-                    $("#aff_pass").hide();
-                    $("#aff_abs").hide();
+                    $("#aff_sold").hide(600);
+                    $("#aff_pass").hide(600);
+                    $("#aff_abs").hide(600);
                 });
                 $("#showall").click(function(){
                   $("#aff_sold").show(300);
@@ -84,6 +106,8 @@
                   $("#aff_abs").hide(300);
                   $("#aff_cred").hide(200);
                 });
+                
+                
         </script>
    </body>
 </html>
