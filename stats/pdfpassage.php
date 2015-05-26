@@ -2,7 +2,13 @@
  include('../mysql_table.php');
   include ('../inc/configure.inc.php');
 
-//$date=$_POST['date']
+/*
+	$date_1=$_POST['datepass'];
+	$date_2=explode ("/", $date_1);
+	$jour=$date_2 [0];
+	$mois=$date_2 [1];
+	$annee=$date_2 [2];
+*/
 
 class PDF extends PDF_MySQL_Table
 {
