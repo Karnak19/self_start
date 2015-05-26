@@ -19,7 +19,7 @@ foreach ($list as $rs) {
 	$prenom_cli = str_replace($_POST['keyword'], '<b>'.$_POST['keyword'].'</b>', $rs['prenom_cli']);
 	$id = $rs['id_cli'];
         $solde = $rs['solde_cli'];
-
+ 
 	// Affichage de la fiche du client.
 	echo '<ul><img src="../img/client/'.$id.'.jpg"></ul>';
 	echo '<ul>'.$id.'</ul>';
@@ -28,7 +28,7 @@ foreach ($list as $rs) {
 	echo '<ul>Solde : '.$solde.' €</ul>';
 	if ($solde <= -12) //Affichage de la notification si le solde est inférieur à 12€
 	{
-	    echo '<p class="bg-danger">Attention, votre solde est débitteur de '.$solde.'€ !</p>';
+	    echo '<p class="bg-danger">Attention, votre solde est débiteur !</p>';
 	}
 }
 ?>

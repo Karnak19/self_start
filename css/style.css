@@ -289,9 +289,9 @@ a {
 }
 .menu img:hover {
     opacity: 1;
-    -webkit-transition: opacity 0.1s ease-in-out;/* transition pour Chrome et Safari */
-    -moz-transition: opacity 0.1s ease-in-out;/* transition pour Firefox */
-    -o-transition: opacity 0.1s ease-in-out;/* transition pour Opéra */
+    -webkit-transition: opacity 0.2s ease-in-out;/* transition pour Chrome et Safari */
+    -moz-transition: opacity 0.2s ease-in-out;/* transition pour Firefox */
+    -o-transition: opacity 0.2s ease-in-out;/* transition pour Opéra */
 }
 
 fieldset {
