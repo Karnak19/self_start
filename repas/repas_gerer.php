@@ -1,4 +1,5 @@
 <?php
+
 //On sort en cas de paramètre manquant ou invalide
 if(empty($_GET['id']) or empty($_GET['type']) or empty($_GET['champ']) or empty($_GET['valeur'])
    or !is_numeric($_GET['id'])
