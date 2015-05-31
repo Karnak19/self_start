@@ -37,7 +37,7 @@
 			$this->tarif_repas=$tarif;
 		}
 		
-		//affichage
+		//affichage du repas
 		public function nom_repas ($id)
 		{
 			$SQL="SELECT lib_repas FROM lb_repas WHERE id_repas='$id'";
@@ -47,6 +47,7 @@
 			return ($nom);
 		} 
 		
+		//affichage tarif selon le repas
 		public function tarif_repas ($id)
 		{
 			$SQL="SELECT tarif_repas FROM lb_repas WHERE id_repas='$id'";
@@ -55,7 +56,8 @@
 			$tarif=$res ["tarif_repas"];
 			return ($tarif);
 		}
-		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		
+		// FONCTIONS POUR REPAS non-utilise
 		
 		public function ajout_repas($lib,$tarif)
 		{
@@ -64,7 +66,7 @@
 			
 		}
 			
-	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 		public function mod_repas ($id, $prix)
 		{
 			$SQL="UPDATE lb_repas SET tarif_repas='$prix' WHERE id_repas='$id'";
@@ -76,5 +78,8 @@
 			$SQL="UPDATE lb_repas SET valide='non' WHERE id_repas='$id'";
 			mysql_query ($SQL) or die (mysql_error ());
 		}
+		
+		//FIN
 	}
+	
 ?>

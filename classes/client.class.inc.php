@@ -77,7 +77,8 @@
 		{
 			return $this->ven;
 		}
-
+		
+		// obtention du solde d'un client
 		public function obtenir_solde ($id_cli)
 		{
 			$SQL="SELECT solde_cli FROM lb_clients WHERE id_cli='$id_cli'";
@@ -124,18 +125,21 @@
 			$this->solde_cli=$solde;
 		}
 		
+		// crediter le solde selon un montant
 		public function crediter_solde($solde,$montant,$client)
 		{
 			$SQLcrediter="UPDATE lb_clients SET solde_cli='$solde'+'$montant' WHERE id_cli='$client'";
 			mysql_query($SQLcrediter) or die (mysql_error());
 		}
 		
+		// debiter le solde d'un client selon le montant total de son repas
 		public function debiter_solde($solde,$montant_repas,$client)
 		{
 			$SQLdebiter="UPDATE lb_clients SET solde_cli='$solde'-'$montant_repas' WHERE id_cli='$client'";
 			mysql_query($SQLdebiter) or die (mysql_error());
 		}
 		
+		//permet d'afficher le client
 		public function afficherclient ()
 		{
 			$SQL="SELECT * FROM lb_clients";

@@ -48,7 +48,8 @@
 		{
 			$this->type_cred=$type;
 		}
-
+		
+		// insertion d'un credit sur un compte
 		public function crediter_compte ($client, $type, $montant)
 		{
 			$date=date ("Y-m-d");

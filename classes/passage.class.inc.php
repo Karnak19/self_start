@@ -56,7 +56,8 @@
 			$jour=date ("Y-m-d");
 			return ($jour);
 		}
-
+		
+		// le service selon l'heure du systeme
 		public function service ()
 		{
 			$heure=date ("H:i");
@@ -77,7 +78,8 @@
 			}
 			return ($service);
 		}
-
+		
+		// calcul du montant global du repas
 		public function montant_repas ($repas_1, $repas_2=0)
 		{
 			$SQL_1="SELECT tarif_repas FROM lb_repas WHERE id_repas='$repas_1'";
