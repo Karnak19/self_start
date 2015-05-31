@@ -13,12 +13,12 @@ $query->execute();
 $list = $query->fetchAll();
 
 foreach ($list as $rs) {
-	// put in bold the written text
+	// Met le texte saisi en gras
 	$nom_cli = str_replace($_POST['keyword'], '<b>'.$_POST['keyword'].'</b>', $rs['nom_cli']);
 	$prenom_cli = str_replace($_POST['keyword'], '<b>'.$_POST['keyword'].'</b>', $rs['prenom_cli']);
 	$id = $rs['id_cli'];
 
-	// add new option
+	// Affiche la liste
     echo '<li onclick="set_item_cred(\''.str_replace("'", "\'", $rs['prenom_cli']." ".$rs['nom_cli']." ".$rs['id_cli']).'\')"><img src="img/client/'.$id.'.jpg">'.$prenom_cli.' '.$nom_cli.'</li>';
 }
 ?>

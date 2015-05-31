@@ -80,9 +80,9 @@ function set_item_fid(item) {
 
 
 function autocompletpass() {
-	var min_length = 1; // min caracters to display the autocomplete
+	var min_length = 1; // Nombre de caractère minimum pour afficher la liste
 	var keyword = $('#nom_pass').val();
-	if (keyword.length >= min_length) {
+	if (keyword.length >= min_length) { //Si le nombre saisi est supérieur
 		$.ajax({
 			url: '../ajax_refresh_pass.php',
 			type: 'POST',
