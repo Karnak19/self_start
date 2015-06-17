@@ -42,6 +42,7 @@
       require_once('classes/date.class.inc.php');
       require_once('classes/repas.class.inc.php');
       require_once('classes/passage.class.inc.php');
+      require_once('classes/note.class.inc.php');
 
 
    ?>
