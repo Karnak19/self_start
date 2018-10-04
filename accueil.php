@@ -1,6 +1,6 @@
 <html>
 	<?php
-		include 'inc/configure.inc.php';
+		//include 'inc/configure.inc.php';
 	
 		if(isset($_SESSION['type']))
 		{
