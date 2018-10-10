@@ -19,15 +19,15 @@ else //Et enfin si c'est le superadmin
 {
 	$requete = "SELECT * FROM lb_connect WHERE log_connect='$loguti' AND mdp_connect='$mdputi' AND type_connect='superadmin'";
 }*/
+$result = $mysqli->query($requete);
 
-$verif = mysql_query($requete);
-$tab = mysql_fetch_array($verif);
+$tab = $result->fetch_array(MYSQLI_ASSOC);
 
 if($tab['mdp_connect']!= '')
 {
 	$req = "SELECT * FROM lb_connect WHERE log_connect='$loguti'";
-        $res = mysql_query($req);
-        $sql = mysql_fetch_array($res);
+        $res = $mysqli->query($req);
+        $sql = $res->fetch_array(MYSQLI_ASSOC);
         $_SESSION['id'] = intval($sql['id_connect']);
         $_SESSION['nom'] = $sql['nom_connect'];
         $_SESSION['prenom'] = $sql['prenom_connect'];
