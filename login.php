@@ -4,7 +4,8 @@
 //Récupération des données.
 
 $loguti = htmlspecialchars($_POST['login']);
-$mdputi = htmlspecialchars($_POST['mdp']); 
+$mdputi = htmlspecialchars($_POST['mdp']);
+
 
 if ($_POST['mdp'] != '') //Si c'est un surveillant qui se connecte
 {
@@ -38,7 +39,7 @@ else
 	header("Location:index.php");
 }
 	
-/*	
+	
 if ($_POST['connect'] == 'compta')
 {
 
@@ -69,5 +70,5 @@ if ($_POST['connect'] == 'compta')
 	{
 	        header("Location:index.php");
 	}
-}*/
+}
 ?>
